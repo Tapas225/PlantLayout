@@ -1,0 +1,1007 @@
+"id","scientific_name","name","allowed_type","value_str","description"
+399942,Lathyrus pratensis,Deutscher Name,str,Wiesen-Platterbse,NULL
+399942,Lathyrus pratensis,Pflanzengruppe,str,Stauden,NULL
+399942,Lathyrus pratensis,Herkunft,enum,Heimisch,NULL
+399942,Lathyrus pratensis,Blattspreite,str,"gefiedert, fiederartig",NULL
+399942,Lathyrus pratensis,Blattform/-Umriss,str,lanzettlich,NULL
+399942,Lathyrus pratensis,Blattform/-Umriss,str,"variabel, unterschiedlich",NULL
+399942,Lathyrus pratensis,Blütezeit von,enum,Juni,NULL
+399942,Lathyrus pratensis,Blütezeit bis,enum,August,NULL
+399942,Lathyrus pratensis,Blattfarbe CD,str,grün,NULL
+399942,Lathyrus pratensis,Blüten-Farbgruppe,enum,gelb,NULL
+399942,Lathyrus pratensis,Blütenfarbe,str,hell-gelb,NULL
+399942,Lathyrus pratensis,Winterhärtezone,enum,Z4,-29°C bis -34°C
+399942,Lathyrus pratensis,Wuchsform,str,niederliegend bis aufsteigend,NULL
+399942,Lathyrus pratensis,Wuchsform,str,"kletternd, rankend",NULL
+399942,Lathyrus pratensis,Wuchsstärke,str,stark,NULL
+399942,Lathyrus pratensis,Wuchsstärke,str,wuchernd,NULL
+399942,Lathyrus pratensis,Bodenfeuchte,str,frisch,frisch
+399942,Lathyrus pratensis,Bodenfeuchte,str,feucht,feucht
+399942,Lathyrus pratensis,Blüten-Hoehe_v,size mm,40,NULL
+399942,Lathyrus pratensis,Blüten_Hoehe_b,size mm,120,NULL
+399942,Lathyrus pratensis,Wuchsverhalten,str,"horstig, lockerhorstig, horstbildend",NULL
+399942,Lathyrus pratensis,Wuchsverhalten,str,ausläufertreibend,NULL
+399942,Lathyrus pratensis,Blattphase,str,sommergrün,NULL
+399942,Lathyrus pratensis,Blattsegment,str,"variabel, unterschiedlich",NULL
+399942,Lathyrus pratensis,Blattsegment,str,lanzettlich,NULL
+399942,Lathyrus pratensis,Blattrand,str,ganzrandig,NULL
+399942,Lathyrus pratensis,Blatteigenschaften,str,kahl,NULL
+399942,Lathyrus pratensis,Blatteigenschaften,str,matt,NULL
+399942,Lathyrus pratensis,Blatteigenschaften,str,glatt,NULL
+399942,Lathyrus pratensis,Blatteigenschaften,str,derb,NULL
+399942,Lathyrus pratensis,Blütenstängel,str,beblättert,NULL
+399942,Lathyrus pratensis,Blütenstängel,str,verzweigt,NULL
+399942,Lathyrus pratensis,Blütenstängel,str,langstängelig,NULL
+399942,Lathyrus pratensis,Stängelblätter,str,wechselständig,NULL
+399942,Lathyrus pratensis,Stängelblätter,str,gestielt (mehr oder weniger),NULL
+399942,Lathyrus pratensis,Stängelblätter,str,mit Nebenblättchen,NULL
+399942,Lathyrus pratensis,Blütenstand,str,traubig,NULL
+399942,Lathyrus pratensis,Blütenstand,str,achselständig,NULL
+399942,Lathyrus pratensis,Blütengröße innerhalb der Gruppe,str,Blüte mittel,NULL
+399942,Lathyrus pratensis,Blütenstellung,str,seitlich zeigend,NULL
+399942,Lathyrus pratensis,"Fruchtart, Samen",str,Hülse,NULL
+399942,Lathyrus pratensis,Lebensbereich,str,GR,Gehölzrand
+399942,Lathyrus pratensis,Lebensbereich,str,Fr,Freifläche
+399942,Lathyrus pratensis,Lebensbereich,str,WR3,Wasserrand frischer bis feuchter Boden
+399942,Lathyrus pratensis,Geselligkeitsstufe,enum,Stufe I (1-3(5) Pflanzen möglichst einzeln oder inTuffs),NULL
+399942,Lathyrus pratensis,Pflanzabstand von,size cm,80,NULL
+399942,Lathyrus pratensis,Pflanzabstand bis,size cm,120,NULL
+399942,Lathyrus pratensis,Lichtansprüche,enum,sonnig,NULL
+399942,Lathyrus pratensis,"Lage, Exposition",str,anpassungsfähig,NULL
+399942,Lathyrus pratensis,Bodenstruktur,str,durchlässig,NULL
+399942,Lathyrus pratensis,Humusbedarf,str,normal,NULL
+399942,Lathyrus pratensis,Bodenreaktion,str,"pH5,5 - 5,9","schwach, mäßig sauer (pH5,5 - 5,9)"
+399942,Lathyrus pratensis,Bodenreaktion,str,"pH6,0 - 6,9","neutral (pH6,0 - 6,9)"
+399942,Lathyrus pratensis,Bodenreaktion,str,"pH7,0 - 7,5","schwach, mäßig kalkhaltig (pH7,0 - 7,5)"
+399942,Lathyrus pratensis,Nährstoffbedarf,str,"mittel, normal, ausgeglichen",NULL
+399942,Lathyrus pratensis,Bodenart,str,"lehmig, sandig",NULL
+399942,Lathyrus pratensis,Bodenart,str,"humos, sandig humos",NULL
+399942,Lathyrus pratensis,Bodenart,str,"lehmig, tonig",NULL
+399942,Lathyrus pratensis,Sichtungswerte BdS,str,bisher ohne Bewertung,NULL
+399942,Lathyrus pratensis,Pflegehinweis,str,An optimalen Standorten kaum Pflege nötig. Siehe Zuordnung zu den Lebensbereichen.,NULL
+399942,Lathyrus pratensis,Pflegehinweis,str,Rückschnitt der Stängel im Herbst bis Spätherbst,NULL
+399942,Lathyrus pratensis,Vermehrung generativ,str,"Normalkeimer, die Samen keimen meist leicht und kurzzeitig",NULL
+399942,Lathyrus pratensis,Vermehrung generativ,str,Aussaat im Frühling,NULL
+399942,Lathyrus pratensis,Blütenfüllung,enum,einfach,NULL
+430576,Lysimachia vulgaris,Deutscher Name,str,Gewöhnlicher Gilbweiderich,NULL
+430576,Lysimachia vulgaris,Pflanzengruppe,str,Stauden,NULL
+430576,Lysimachia vulgaris,Herkunft,enum,Heimisch,NULL
+430576,Lysimachia vulgaris,Blattspreite,str,"einfach, ungetreilt",NULL
+430576,Lysimachia vulgaris,Blattform/-Umriss,str,breitlanzettlich,NULL
+430576,Lysimachia vulgaris,Blütezeit von,enum,Juni,NULL
+430576,Lysimachia vulgaris,Blütezeit bis,enum,Juli,NULL
+430576,Lysimachia vulgaris,Blatt-Farbgruppe HAE,enum,grün,NULL
+430576,Lysimachia vulgaris,Blattfarbe HAE,enum,grün,NULL
+430576,Lysimachia vulgaris,Blattfarbe CD,str,grün,NULL
+430576,Lysimachia vulgaris,Blüten-Farbgruppe,enum,gelb,NULL
+430576,Lysimachia vulgaris,Blütenfarbe,str,gelb,NULL
+430576,Lysimachia vulgaris,Winterhärtezone,enum,Z5,-23°C bis -28°C
+430576,Lysimachia vulgaris,Blütenfarbe HAE,enum,gelb,NULL
+430576,Lysimachia vulgaris,Wuchsform,str,"aufrechte, beblätterte Stängel ohne grundständigen Blattschopf",NULL
+430576,Lysimachia vulgaris,Wuchsstärke,str,stark,NULL
+430576,Lysimachia vulgaris,Bodenfeuchte,str,frisch,frisch
+430576,Lysimachia vulgaris,Bodenfeuchte,str,feucht,feucht
+430576,Lysimachia vulgaris,Blüten-Hoehe_v,size mm,60,NULL
+430576,Lysimachia vulgaris,Blüten_Hoehe_b,size mm,100,NULL
+430576,Lysimachia vulgaris,Wuchsverhalten,str,ausläufertreibend,NULL
+430576,Lysimachia vulgaris,Blattphase,str,sommergrün,NULL
+430576,Lysimachia vulgaris,Blattrand,str,ganzrandig,NULL
+430576,Lysimachia vulgaris,Blatteigenschaften,str,fiedernervig,NULL
+430576,Lysimachia vulgaris,Blatteigenschaften,str,matt,NULL
+430576,Lysimachia vulgaris,Blatteigenschaften,str,glatt,NULL
+430576,Lysimachia vulgaris,Blatteigenschaften,str,derb,NULL
+430576,Lysimachia vulgaris,Blütenstängel,str,unverwzeigt,NULL
+430576,Lysimachia vulgaris,Blütenstängel,str,"aufrecht, locker bis straff aufrecht",NULL
+430576,Lysimachia vulgaris,Blütenstängel,str,beblättert,NULL
+430576,Lysimachia vulgaris,Stängelblätter,str,sitzend,NULL
+430576,Lysimachia vulgaris,Stängelblätter,str,gegenständig,NULL
+430576,Lysimachia vulgaris,Stängelblätter,str,"quirlartig, wirtelig",NULL
+430576,Lysimachia vulgaris,Blütenstand,str,traubig,NULL
+430576,Lysimachia vulgaris,Blütenstand,str,rispig,NULL
+430576,Lysimachia vulgaris,Blütenstand,str,achselständig,NULL
+430576,Lysimachia vulgaris,Blütengröße innerhalb der Gruppe,str,Blüte mittel,NULL
+430576,Lysimachia vulgaris,Blütenstellung,str,seitlich zeigend,NULL
+430576,Lysimachia vulgaris,"Fruchtart, Samen",str,Kapsel,NULL
+430576,Lysimachia vulgaris,Lebensbereich,str,GR,Gehölzrand
+430576,Lysimachia vulgaris,Lebensbereich,str,Fr,Freifläche
+430576,Lysimachia vulgaris,Lebensbereich,str,WR3,Wasserrand frischer bis feuchter Boden
+430576,Lysimachia vulgaris,Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+430576,Lysimachia vulgaris,Pflanzabstand von,size cm,30,NULL
+430576,Lysimachia vulgaris,Pflanzabstand bis,size cm,40,NULL
+430576,Lysimachia vulgaris,Lichtansprüche,enum,sonnig,NULL
+430576,Lysimachia vulgaris,Lichtansprüche,enum,absonnig,NULL
+430576,Lysimachia vulgaris,Lichtansprüche,enum,halbschattig,NULL
+430576,Lysimachia vulgaris,"Lage, Exposition",str,anpassungsfähig,NULL
+430576,Lysimachia vulgaris,Bodenstruktur,str,durchlässig,NULL
+430576,Lysimachia vulgaris,Humusbedarf,str,normal,NULL
+430576,Lysimachia vulgaris,Bodenreaktion,str,"pH5,5 - 5,9","schwach, mäßig sauer (pH5,5 - 5,9)"
+430576,Lysimachia vulgaris,Nährstoffbedarf,str,"mittel, normal, ausgeglichen",NULL
+430576,Lysimachia vulgaris,Bodenart,str,"lehmig, sandig",NULL
+430576,Lysimachia vulgaris,Bodenart,str,"humos, sandig humos",NULL
+430576,Lysimachia vulgaris,Bodenart,str,"anmoorig, moorig",NULL
+430576,Lysimachia vulgaris,Sichtungswerte BdS,str,* (gut),NULL
+430576,Lysimachia vulgaris,Pflegehinweis,str,"Ausbreitung durch Ausläufer, Rhizome oder wurzelnde Triebe, nach Bedarf, eingrenzen",NULL
+430576,Lysimachia vulgaris,Pflegehinweis,str,Rückschnitt der Stängel im Herbst bis Spätherbst,NULL
+430576,Lysimachia vulgaris,Vermehrung generativ,str,"Normalkeimer, die Samen keimen meist leicht und kurzzeitig",NULL
+430576,Lysimachia vulgaris,Vermehrung generativ,str,Aussaat im Frühling,NULL
+430576,Lysimachia vulgaris,Allgemeine Verwendungsmöglichkeiten,str,Heil- und Medizinpflanzen,NULL
+430576,Lysimachia vulgaris,Blütenfüllung,enum,einfach,NULL
+430576,Lysimachia vulgaris,Spezielle Verwendung Sumpf-Wasserpflanzen,str,Repositionspflanzung,NULL
+668120,Veronica chamaedrys,Deutscher Name,str,Eichenblättriger Ehrenpreis,NULL
+668120,Veronica chamaedrys,Pflanzengruppe,str,Stauden,NULL
+668120,Veronica chamaedrys,Herkunft,enum,Heimisch,NULL
+668120,Veronica chamaedrys,Blattspreite,str,"einfach, ungetreilt",NULL
+668120,Veronica chamaedrys,Blattform/-Umriss,str,lanzettlich,NULL
+668120,Veronica chamaedrys,Blattform/-Umriss,str,länglich,NULL
+668120,Veronica chamaedrys,Blattform/-Umriss,str,abgerundet,NULL
+668120,Veronica chamaedrys,Blattform/-Umriss,str,eiförmig,NULL
+668120,Veronica chamaedrys,Blütezeit von,enum,Mai,NULL
+668120,Veronica chamaedrys,Blütezeit bis,enum,Juli,NULL
+668120,Veronica chamaedrys,Blattfarbe CD,str,grün,NULL
+668120,Veronica chamaedrys,Blüten-Farbgruppe,enum,blau,NULL
+668120,Veronica chamaedrys,Blütenfarbe,str,blau,NULL
+668120,Veronica chamaedrys,Winterhärtezone,enum,Z3,-35°C bis -39°C
+668120,Veronica chamaedrys,Wuchsform,str,kissenartig bis kissenbildend,NULL
+668120,Veronica chamaedrys,Wuchsstärke,str,stark,NULL
+668120,Veronica chamaedrys,Bodenfeuchte,str,frisch,frisch
+668120,Veronica chamaedrys,Bodenfeuchte,str,trocken,trocken
+668120,Veronica chamaedrys,Blüten-Hoehe_v,size mm,10,NULL
+668120,Veronica chamaedrys,Blüten_Hoehe_b,size mm,30,NULL
+668120,Veronica chamaedrys,Wuchsverhalten,str,"horstig, lockerhorstig, horstbildend",NULL
+668120,Veronica chamaedrys,Wuchsverhalten,str,ausläufertreibend,NULL
+668120,Veronica chamaedrys,Blattphase,str,sommergrün,NULL
+668120,Veronica chamaedrys,Blattrand,str,eingeschnitten,NULL
+668120,Veronica chamaedrys,Blattrand,str,gesägt,NULL
+668120,Veronica chamaedrys,Blatteigenschaften,str,fiedernervig,NULL
+668120,Veronica chamaedrys,Blatteigenschaften,str,kahl,NULL
+668120,Veronica chamaedrys,Blatteigenschaften,str,matt,NULL
+668120,Veronica chamaedrys,Blatteigenschaften,str,derb,NULL
+668120,Veronica chamaedrys,Blütenstängel,str,kurzstängelig,NULL
+668120,Veronica chamaedrys,Blütenstängel,str,unverwzeigt,NULL
+668120,Veronica chamaedrys,Blütenstängel,str,"aufrecht, locker bis straff aufrecht",NULL
+668120,Veronica chamaedrys,Blütenstängel,str,beblättert,NULL
+668120,Veronica chamaedrys,Stängelblätter,str,gestielt (mehr oder weniger),NULL
+668120,Veronica chamaedrys,Stängelblätter,str,gegenständig,NULL
+668120,Veronica chamaedrys,Blütenstand,str,traubig,NULL
+668120,Veronica chamaedrys,Blütenstand,str,achselständig,NULL
+668120,Veronica chamaedrys,Blütengröße innerhalb der Gruppe,str,Blüte mittel,NULL
+668120,Veronica chamaedrys,Blütenstellung,str,seitlich zeigend,NULL
+668120,Veronica chamaedrys,"Fruchtart, Samen",str,Kapsel,NULL
+668120,Veronica chamaedrys,Lebensbereich,str,GR,Gehölzrand
+668120,Veronica chamaedrys,Lebensbereich,str,Fr,Freifläche
+668120,Veronica chamaedrys,Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+668120,Veronica chamaedrys,Pflanzabstand von,size cm,20,NULL
+668120,Veronica chamaedrys,Pflanzabstand bis,size cm,30,NULL
+668120,Veronica chamaedrys,Lichtansprüche,enum,sonnig,NULL
+668120,Veronica chamaedrys,Lichtansprüche,enum,absonnig,NULL
+668120,Veronica chamaedrys,Lichtansprüche,enum,halbschattig,NULL
+668120,Veronica chamaedrys,"Lage, Exposition",str,anpassungsfähig,NULL
+668120,Veronica chamaedrys,Bodenstruktur,str,durchlässig,NULL
+668120,Veronica chamaedrys,Humusbedarf,str,normal,NULL
+668120,Veronica chamaedrys,Bodenreaktion,str,"pH5,5 - 5,9","schwach, mäßig sauer (pH5,5 - 5,9)"
+668120,Veronica chamaedrys,Bodenreaktion,str,"pH6,0 - 6,9","neutral (pH6,0 - 6,9)"
+668120,Veronica chamaedrys,Nährstoffbedarf,str,"mittel, normal, ausgeglichen",NULL
+668120,Veronica chamaedrys,Bodenart,str,"lehmig, sandig",NULL
+668120,Veronica chamaedrys,Bodenart,str,"humos, sandig humos",NULL
+668120,Veronica chamaedrys,Sichtungswerte BdS,str,bisher ohne Bewertung,NULL
+668120,Veronica chamaedrys,Pflegehinweis,str,An optimalen Standorten kaum Pflege nötig. Siehe Zuordnung zu den Lebensbereichen.,NULL
+668120,Veronica chamaedrys,Vermehrung generativ,str,"Normalkeimer, die Samen keimen meist leicht und kurzzeitig",NULL
+668120,Veronica chamaedrys,Vermehrung generativ,str,Aussaat im Frühling,NULL
+668120,Veronica chamaedrys,Blütenfüllung,enum,einfach,NULL
+333452,Hieracium pilosella 'Niveum',Deutscher Name,str,Silbriges Garten-Habichtskraut,NULL
+333452,Hieracium pilosella 'Niveum',Pflanzengruppe,str,Stauden,NULL
+333452,Hieracium pilosella 'Niveum',Herkunft,enum,"Züchtung, Auslese, Cultivar",NULL
+333452,Hieracium pilosella 'Niveum',Blattspreite,str,"einfach, ungetreilt",NULL
+333452,Hieracium pilosella 'Niveum',Blattform/-Umriss,str,lanzettlich,NULL
+333452,Hieracium pilosella 'Niveum',Blattform/-Umriss,str,zungen- bis spatelförmig,NULL
+333452,Hieracium pilosella 'Niveum',Blattstellung,str,rosettig,NULL
+333452,Hieracium pilosella 'Niveum',Blattstellung,str,sitzend,NULL
+333452,Hieracium pilosella 'Niveum',Blattstellung,str,grundständig,NULL
+333452,Hieracium pilosella 'Niveum',Blütezeit von,enum,Juni,NULL
+333452,Hieracium pilosella 'Niveum',Blütezeit bis,enum,August,NULL
+333452,Hieracium pilosella 'Niveum',Blatt-Farbgruppe HAE,enum,grün,NULL
+333452,Hieracium pilosella 'Niveum',Blattfarbe HAE,enum,grün,NULL
+333452,Hieracium pilosella 'Niveum',Blattfarbe CD,str,grün,NULL
+333452,Hieracium pilosella 'Niveum',Blüten-Farbgruppe,enum,gelb,NULL
+333452,Hieracium pilosella 'Niveum',Blütenfarbe,str,hell-gelb,NULL
+333452,Hieracium pilosella 'Niveum',Winterhärtezone,enum,Z5,-23°C bis -28°C
+333452,Hieracium pilosella 'Niveum',Blütenfarbe HAE,enum,hell-gelb,NULL
+333452,Hieracium pilosella 'Niveum',Wuchsform,str,"teppichartig, mattenartig",NULL
+333452,Hieracium pilosella 'Niveum',Bodenfeuchte,str,trocken,trocken
+333452,Hieracium pilosella 'Niveum',Blatt-Hoehe_v,size mm,10,NULL
+333452,Hieracium pilosella 'Niveum',Blatt-Hoehe_b,size mm,10,NULL
+333452,Hieracium pilosella 'Niveum',Blüten-Hoehe_v,size mm,20,NULL
+333452,Hieracium pilosella 'Niveum',Blüten_Hoehe_b,size mm,20,NULL
+333452,Hieracium pilosella 'Niveum',Wuchsverhalten,str,ausläufertreibend,NULL
+333452,Hieracium pilosella 'Niveum',Blattphase,str,wintergrün,NULL
+333452,Hieracium pilosella 'Niveum',Blattrand,str,ganzrandig,NULL
+333452,Hieracium pilosella 'Niveum',Blatteigenschaften,str,fiedernervig,NULL
+333452,Hieracium pilosella 'Niveum',Blatteigenschaften,str,matt,NULL
+333452,Hieracium pilosella 'Niveum',Blatteigenschaften,str,"fein behaart, teils drüsig",NULL
+333452,Hieracium pilosella 'Niveum',Blütenstängel,str,unverwzeigt,NULL
+333452,Hieracium pilosella 'Niveum',Blütenstängel,str,"aufrecht, locker bis straff aufrecht",NULL
+333452,Hieracium pilosella 'Niveum',Blütenstängel,str,"kahl, nicht beblättert",NULL
+333452,Hieracium pilosella 'Niveum',Blütenstängel,str,"stängellos, langstielig",NULL
+333452,Hieracium pilosella 'Niveum',Stängelblätter,str,"fehlend, keine",NULL
+333452,Hieracium pilosella 'Niveum',Blütenstand,str,körbchenartig,NULL
+333452,Hieracium pilosella 'Niveum',Blütenstand,str,einzeln,NULL
+333452,Hieracium pilosella 'Niveum',Blütengröße innerhalb der Gruppe,str,Blume klein,NULL
+333452,Hieracium pilosella 'Niveum',Blütenstellung,str,aufwärts zeigend,NULL
+333452,Hieracium pilosella 'Niveum',"Fruchtart, Samen",str,Samen mit Pappus,NULL
+333452,Hieracium pilosella 'Niveum',Lebensbereich,str,St,Steinanlagen
+333452,Hieracium pilosella 'Niveum',Lebensbereich,str,FS,Felssteppe
+333452,Hieracium pilosella 'Niveum',Lebensbereich,str,Fr,Freifläche
+333452,Hieracium pilosella 'Niveum',Lebensbereich,str,H,Heide
+333452,Hieracium pilosella 'Niveum',Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+333452,Hieracium pilosella 'Niveum',Pflanzabstand von,size cm,20,NULL
+333452,Hieracium pilosella 'Niveum',Pflanzabstand bis,size cm,30,NULL
+333452,Hieracium pilosella 'Niveum',Lichtansprüche,enum,sonnig,NULL
+333452,Hieracium pilosella 'Niveum',"Lage, Exposition",str,anpassungsfähig,NULL
+333452,Hieracium pilosella 'Niveum',Bodenstruktur,str,durchlässig,NULL
+333452,Hieracium pilosella 'Niveum',Humusbedarf,str,gering,NULL
+333452,Hieracium pilosella 'Niveum',Bodenreaktion,str,"pH5,5 - 5,9","schwach, mäßig sauer (pH5,5 - 5,9)"
+333452,Hieracium pilosella 'Niveum',Bodenreaktion,str,"pH4,6 - 5,5","sauer/kalkfrei (pH4,6 - 5,5)"
+333452,Hieracium pilosella 'Niveum',Nährstoffbedarf,str,"gering, nährstoffarm",NULL
+333452,Hieracium pilosella 'Niveum',Bodenart,str,"sandig, mineralisch",NULL
+333452,Hieracium pilosella 'Niveum',Bodenart,str,steinreich,NULL
+333452,Hieracium pilosella 'Niveum',Bodenart,str,"humos, sandig humos",NULL
+333452,Hieracium pilosella 'Niveum',Sichtungswerte BdS,str,* (gut),NULL
+333452,Hieracium pilosella 'Niveum',Pflegehinweis,str,An optimalen Standorten kaum Pflege nötig. Siehe Zuordnung zu den Lebensbereichen.,NULL
+333452,Hieracium pilosella 'Niveum',Pflegehinweis,str,Rückschnitt vor der Samenreife um Selbstaussaat zu vermeiden,NULL
+333452,Hieracium pilosella 'Niveum',Vermehrung vegetativ,str,Teilung im Frühling,NULL
+333452,Hieracium pilosella 'Niveum',Vermehrung vegetativ,str,Teilung nach der Blüte,NULL
+333452,Hieracium pilosella 'Niveum',Allgemeine Verwendungsmöglichkeiten,str,Insektennährpflanze,NULL
+333452,Hieracium pilosella 'Niveum',Allgemeine Verwendungsmöglichkeiten,str,extensive Dachbegrünung,NULL
+333452,Hieracium pilosella 'Niveum',Blütenfüllung,enum,einfach,NULL
+333452,Hieracium pilosella 'Niveum',Dachbegrünung geeignet,enum,ja,zur Dachbegrünung geeignet
+673568,Veronica teucrium 'Knallblau',Deutscher Name,str,Großer Garten-Ehrenpreis,NULL
+673568,Veronica teucrium 'Knallblau',Pflanzengruppe,str,Stauden,NULL
+673568,Veronica teucrium 'Knallblau',Herkunft,enum,"Züchtung, Auslese, Cultivar",NULL
+673568,Veronica teucrium 'Knallblau',Blattspreite,str,"einfach, ungetreilt",NULL
+673568,Veronica teucrium 'Knallblau',Blattform/-Umriss,str,breitlanzettlich,NULL
+673568,Veronica teucrium 'Knallblau',Blattform/-Umriss,str,abgerundet,NULL
+673568,Veronica teucrium 'Knallblau',Blütezeit von,enum,Mai,NULL
+673568,Veronica teucrium 'Knallblau',Blütezeit bis,enum,Juni,NULL
+673568,Veronica teucrium 'Knallblau',Blatt-Farbgruppe HAE,enum,grün,NULL
+673568,Veronica teucrium 'Knallblau',Blattfarbe HAE,enum,grün,NULL
+673568,Veronica teucrium 'Knallblau',Blattfarbe CD,str,grün,NULL
+673568,Veronica teucrium 'Knallblau',Blüten-Farbgruppe,enum,blau,NULL
+673568,Veronica teucrium 'Knallblau',Blütenfarbe,str,leuchtend-blau,NULL
+673568,Veronica teucrium 'Knallblau',Winterhärtezone,enum,Z6,-18°C bis -22°C
+673568,Veronica teucrium 'Knallblau',Blütenfarbe HAE,enum,leuchtend-blau,NULL
+673568,Veronica teucrium 'Knallblau',Wuchsform,str,aufrecht bis locker aufrecht,NULL
+673568,Veronica teucrium 'Knallblau',Bodenfeuchte,str,frisch,frisch
+673568,Veronica teucrium 'Knallblau',Bodenfeuchte,str,trocken,trocken
+673568,Veronica teucrium 'Knallblau',Blüten-Hoehe_v,size mm,25,NULL
+673568,Veronica teucrium 'Knallblau',Blüten_Hoehe_b,size mm,30,NULL
+673568,Veronica teucrium 'Knallblau',Wuchsverhalten,str,"horstig, lockerhorstig, horstbildend",NULL
+673568,Veronica teucrium 'Knallblau',Blattphase,str,sommergrün,NULL
+673568,Veronica teucrium 'Knallblau',Blattrand,str,gekerbt,NULL
+673568,Veronica teucrium 'Knallblau',Blatteigenschaften,str,fiedernervig,NULL
+673568,Veronica teucrium 'Knallblau',Blatteigenschaften,str,kahl,NULL
+673568,Veronica teucrium 'Knallblau',Blatteigenschaften,str,glatt,NULL
+673568,Veronica teucrium 'Knallblau',Blütenstängel,str,kurzstängelig,NULL
+673568,Veronica teucrium 'Knallblau',Blütenstängel,str,unverwzeigt,NULL
+673568,Veronica teucrium 'Knallblau',Blütenstängel,str,wenig beblättert,NULL
+673568,Veronica teucrium 'Knallblau',Blütenstängel,str,"aufrecht, locker bis straff aufrecht",NULL
+673568,Veronica teucrium 'Knallblau',Stängelblätter,str,gestielt (mehr oder weniger),NULL
+673568,Veronica teucrium 'Knallblau',Stängelblätter,str,gegenständig,NULL
+673568,Veronica teucrium 'Knallblau',Blütenstand,str,traubig,NULL
+673568,Veronica teucrium 'Knallblau',Blütenstand,str,achselständig,NULL
+673568,Veronica teucrium 'Knallblau',Blütengröße innerhalb der Gruppe,str,Blüte mittel,NULL
+673568,Veronica teucrium 'Knallblau',Blütenstellung,str,seitlich zeigend,NULL
+673568,Veronica teucrium 'Knallblau',"Fruchtart, Samen",str,Kapsel,NULL
+673568,Veronica teucrium 'Knallblau',Lebensbereich,str,GR,Gehölzrand
+673568,Veronica teucrium 'Knallblau',Lebensbereich,str,Fr,Freifläche
+673568,Veronica teucrium 'Knallblau',Lebensbereich,str,SH,Steppenheide
+673568,Veronica teucrium 'Knallblau',Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+673568,Veronica teucrium 'Knallblau',Pflanzabstand von,size cm,30,NULL
+673568,Veronica teucrium 'Knallblau',Pflanzabstand bis,size cm,30,NULL
+673568,Veronica teucrium 'Knallblau',Lichtansprüche,enum,sonnig,NULL
+673568,Veronica teucrium 'Knallblau',"Lage, Exposition",str,anpassungsfähig,NULL
+673568,Veronica teucrium 'Knallblau',Bodenstruktur,str,durchlässig,NULL
+673568,Veronica teucrium 'Knallblau',Humusbedarf,str,normal,NULL
+673568,Veronica teucrium 'Knallblau',Humusbedarf,str,hoch,NULL
+673568,Veronica teucrium 'Knallblau',Bodenreaktion,str,"pH6,0 - 6,9","neutral (pH6,0 - 6,9)"
+673568,Veronica teucrium 'Knallblau',Bodenreaktion,str,"pH7,0 - 7,5","schwach, mäßig kalkhaltig (pH7,0 - 7,5)"
+673568,Veronica teucrium 'Knallblau',Nährstoffbedarf,str,"mittel, normal, ausgeglichen",NULL
+673568,Veronica teucrium 'Knallblau',Bodenart,str,"lehmig, sandig",NULL
+673568,Veronica teucrium 'Knallblau',Bodenart,str,steinreich,NULL
+673568,Veronica teucrium 'Knallblau',Bodenart,str,"humos, sandig humos",NULL
+673568,Veronica teucrium 'Knallblau',Sichtungswerte BdS,str,*** (ausgezeichnet),NULL
+673568,Veronica teucrium 'Knallblau',Pflegehinweis,str,Rückschnitt nach der ersten Blühphase bewirkt meist eine Nachblüte,NULL
+673568,Veronica teucrium 'Knallblau',Pflegehinweis,str,Rückschnitt abgeblühter Blütenstände bis zu den oberen Stängelblättern,NULL
+673568,Veronica teucrium 'Knallblau',Vermehrung vegetativ,str,Teilung im Frühling,NULL
+673568,Veronica teucrium 'Knallblau',Vermehrung vegetativ,str,Teilung nach der Blüte,NULL
+673568,Veronica teucrium 'Knallblau',Vermehrung vegetativ,str,Stecklinge im Frühling,NULL
+673568,Veronica teucrium 'Knallblau',Allgemeine Verwendungsmöglichkeiten,str,Insektennährpflanze,NULL
+673568,Veronica teucrium 'Knallblau',Blütenfüllung,enum,einfach,NULL
+673699,Veronica teucrium 'Shirley Blue',Deutscher Name,str,Großer Garten-Ehrenpreis,NULL
+673699,Veronica teucrium 'Shirley Blue',Pflanzengruppe,str,Stauden,NULL
+673699,Veronica teucrium 'Shirley Blue',Herkunft,enum,"Züchtung, Auslese, Cultivar",NULL
+673699,Veronica teucrium 'Shirley Blue',Blattspreite,str,"einfach, ungetreilt",NULL
+673699,Veronica teucrium 'Shirley Blue',Blattform/-Umriss,str,breitlanzettlich,NULL
+673699,Veronica teucrium 'Shirley Blue',Blattform/-Umriss,str,abgerundet,NULL
+673699,Veronica teucrium 'Shirley Blue',Blütezeit von,enum,Mai,NULL
+673699,Veronica teucrium 'Shirley Blue',Blütezeit bis,enum,Juni,NULL
+673699,Veronica teucrium 'Shirley Blue',Blatt-Farbgruppe HAE,enum,grün,NULL
+673699,Veronica teucrium 'Shirley Blue',Blattfarbe HAE,enum,grün,NULL
+673699,Veronica teucrium 'Shirley Blue',Blattfarbe CD,str,grün,NULL
+673699,Veronica teucrium 'Shirley Blue',Blüten-Farbgruppe,enum,blau,NULL
+673699,Veronica teucrium 'Shirley Blue',Blütenfarbe,str,blau,NULL
+673699,Veronica teucrium 'Shirley Blue',Winterhärtezone,enum,Z6,-18°C bis -22°C
+673699,Veronica teucrium 'Shirley Blue',Blütenfarbe HAE,enum,blau,NULL
+673699,Veronica teucrium 'Shirley Blue',Wuchsform,str,aufrecht bis locker aufrecht,NULL
+673699,Veronica teucrium 'Shirley Blue',Bodenfeuchte,str,frisch,frisch
+673699,Veronica teucrium 'Shirley Blue',Bodenfeuchte,str,trocken,trocken
+673699,Veronica teucrium 'Shirley Blue',Blüten-Hoehe_v,size mm,25,NULL
+673699,Veronica teucrium 'Shirley Blue',Blüten_Hoehe_b,size mm,30,NULL
+673699,Veronica teucrium 'Shirley Blue',Wuchsverhalten,str,"horstig, lockerhorstig, horstbildend",NULL
+673699,Veronica teucrium 'Shirley Blue',Blattphase,str,sommergrün,NULL
+673699,Veronica teucrium 'Shirley Blue',Blattrand,str,gekerbt,NULL
+673699,Veronica teucrium 'Shirley Blue',Blatteigenschaften,str,fiedernervig,NULL
+673699,Veronica teucrium 'Shirley Blue',Blatteigenschaften,str,kahl,NULL
+673699,Veronica teucrium 'Shirley Blue',Blatteigenschaften,str,glatt,NULL
+673699,Veronica teucrium 'Shirley Blue',Blütenstängel,str,kurzstängelig,NULL
+673699,Veronica teucrium 'Shirley Blue',Blütenstängel,str,unverwzeigt,NULL
+673699,Veronica teucrium 'Shirley Blue',Blütenstängel,str,wenig beblättert,NULL
+673699,Veronica teucrium 'Shirley Blue',Blütenstängel,str,"aufrecht, locker bis straff aufrecht",NULL
+673699,Veronica teucrium 'Shirley Blue',Stängelblätter,str,gestielt (mehr oder weniger),NULL
+673699,Veronica teucrium 'Shirley Blue',Stängelblätter,str,gegenständig,NULL
+673699,Veronica teucrium 'Shirley Blue',Blütenstand,str,traubig,NULL
+673699,Veronica teucrium 'Shirley Blue',Blütenstand,str,achselständig,NULL
+673699,Veronica teucrium 'Shirley Blue',Blütengröße innerhalb der Gruppe,str,Blüte mittel,NULL
+673699,Veronica teucrium 'Shirley Blue',Blütenstellung,str,seitlich zeigend,NULL
+673699,Veronica teucrium 'Shirley Blue',"Fruchtart, Samen",str,Kapsel,NULL
+673699,Veronica teucrium 'Shirley Blue',Lebensbereich,str,GR,Gehölzrand
+673699,Veronica teucrium 'Shirley Blue',Lebensbereich,str,Fr,Freifläche
+673699,Veronica teucrium 'Shirley Blue',Lebensbereich,str,SH,Steppenheide
+673699,Veronica teucrium 'Shirley Blue',Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+673699,Veronica teucrium 'Shirley Blue',Pflanzabstand von,size cm,30,NULL
+673699,Veronica teucrium 'Shirley Blue',Pflanzabstand bis,size cm,30,NULL
+673699,Veronica teucrium 'Shirley Blue',Lichtansprüche,enum,sonnig,NULL
+673699,Veronica teucrium 'Shirley Blue',"Lage, Exposition",str,anpassungsfähig,NULL
+673699,Veronica teucrium 'Shirley Blue',Bodenstruktur,str,durchlässig,NULL
+673699,Veronica teucrium 'Shirley Blue',Humusbedarf,str,normal,NULL
+673699,Veronica teucrium 'Shirley Blue',Humusbedarf,str,hoch,NULL
+673699,Veronica teucrium 'Shirley Blue',Bodenreaktion,str,"pH6,0 - 6,9","neutral (pH6,0 - 6,9)"
+673699,Veronica teucrium 'Shirley Blue',Bodenreaktion,str,"pH7,0 - 7,5","schwach, mäßig kalkhaltig (pH7,0 - 7,5)"
+673699,Veronica teucrium 'Shirley Blue',Nährstoffbedarf,str,"mittel, normal, ausgeglichen",NULL
+673699,Veronica teucrium 'Shirley Blue',Bodenart,str,"lehmig, sandig",NULL
+673699,Veronica teucrium 'Shirley Blue',Bodenart,str,steinreich,NULL
+673699,Veronica teucrium 'Shirley Blue',Bodenart,str,"humos, sandig humos",NULL
+673699,Veronica teucrium 'Shirley Blue',Sichtungswerte BdS,str,** (sehr gut),NULL
+673699,Veronica teucrium 'Shirley Blue',Pflegehinweis,str,Rückschnitt nach der ersten Blühphase bewirkt meist eine Nachblüte,NULL
+673699,Veronica teucrium 'Shirley Blue',Pflegehinweis,str,Rückschnitt abgeblühter Blütenstände bis zu den oberen Stängelblättern,NULL
+673699,Veronica teucrium 'Shirley Blue',Vermehrung vegetativ,str,Teilung im Frühling,NULL
+673699,Veronica teucrium 'Shirley Blue',Vermehrung vegetativ,str,Teilung nach der Blüte,NULL
+673699,Veronica teucrium 'Shirley Blue',Vermehrung vegetativ,str,Stecklinge im Frühling,NULL
+673699,Veronica teucrium 'Shirley Blue',Allgemeine Verwendungsmöglichkeiten,str,Insektennährpflanze,NULL
+673699,Veronica teucrium 'Shirley Blue',Blütenfüllung,enum,einfach,NULL
+131585,Cardamine trifolia,Deutscher Name,str,Kleeblättriges Schaumkraut,NULL
+131585,Cardamine trifolia,Pflanzengruppe,str,Stauden,NULL
+131585,Cardamine trifolia,Herkunft,enum,Heimisch,NULL
+131585,Cardamine trifolia,Blattspreite,str,zusammengesetzt,NULL
+131585,Cardamine trifolia,Blattspreite,str,mehrteilig,NULL
+131585,Cardamine trifolia,Blattform/-Umriss,str,rund bis rundlich,NULL
+131585,Cardamine trifolia,Blattstellung,str,rosettig,NULL
+131585,Cardamine trifolia,Blattstellung,str,grundständig,NULL
+131585,Cardamine trifolia,Blütezeit von,enum,April,NULL
+131585,Cardamine trifolia,Blütezeit bis,enum,Juni,NULL
+131585,Cardamine trifolia,Blatt-Farbgruppe HAE,enum,grün,NULL
+131585,Cardamine trifolia,Blattfarbe HAE,enum,grün,NULL
+131585,Cardamine trifolia,Blattfarbe CD,str,grün,NULL
+131585,Cardamine trifolia,Blüten-Farbgruppe,enum,weiß,NULL
+131585,Cardamine trifolia,Blütenfarbe,str,weiß,NULL
+131585,Cardamine trifolia,Winterhärtezone,enum,Z7,-12°C bis -17°C
+131585,Cardamine trifolia,Blütenfarbe HAE,enum,weiß,NULL
+131585,Cardamine trifolia,Wuchsform,str,"teppichartig, mattenartig",NULL
+131585,Cardamine trifolia,Wuchsform,str,flächig,NULL
+131585,Cardamine trifolia,Bodenfeuchte,str,feucht,feucht
+131585,Cardamine trifolia,Blüten-Hoehe_v,size mm,10,NULL
+131585,Cardamine trifolia,Blüten_Hoehe_b,size mm,20,NULL
+131585,Cardamine trifolia,Wuchsverhalten,str,"horstig, lockerhorstig, horstbildend",NULL
+131585,Cardamine trifolia,Wuchsverhalten,str,ausläufertreibend,NULL
+131585,Cardamine trifolia,Blattphase,str,sommergrün,NULL
+131585,Cardamine trifolia,Blattsegment,str,dreieckig,NULL
+131585,Cardamine trifolia,Blattrand,str,ganzrandig,NULL
+131585,Cardamine trifolia,Blatteigenschaften,str,fiedernervig,NULL
+131585,Cardamine trifolia,Blatteigenschaften,str,kahl,NULL
+131585,Cardamine trifolia,Blatteigenschaften,str,glatt,NULL
+131585,Cardamine trifolia,Blütenstängel,str,"aufrecht, locker bis straff aufrecht",NULL
+131585,Cardamine trifolia,Blütenstängel,str,"kahl, nicht beblättert",NULL
+131585,Cardamine trifolia,Stängelblätter,str,wechselständig,NULL
+131585,Cardamine trifolia,Stängelblätter,str,gestielt (mehr oder weniger),NULL
+131585,Cardamine trifolia,Blütenstand,str,"mehrblütig, endständig",NULL
+131585,Cardamine trifolia,Blütenstand,str,traubig,NULL
+131585,Cardamine trifolia,Blütengröße innerhalb der Gruppe,str,Blüte klein,NULL
+131585,Cardamine trifolia,Blütenstellung,str,aufwärts zeigend,NULL
+131585,Cardamine trifolia,Blütenstellung,str,seitlich zeigend,NULL
+131585,Cardamine trifolia,"Fruchtart, Samen",str,Schote,NULL
+131585,Cardamine trifolia,Lebensbereich,str,GR,Gehölzrand
+131585,Cardamine trifolia,Lebensbereich,str,Fr,Freifläche
+131585,Cardamine trifolia,Lebensbereich,str,WR3,Wasserrand frischer bis feuchter Boden
+131585,Cardamine trifolia,Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+131585,Cardamine trifolia,Pflanzabstand von,size cm,20,NULL
+131585,Cardamine trifolia,Pflanzabstand bis,size cm,30,NULL
+131585,Cardamine trifolia,Lichtansprüche,enum,sonnig,NULL
+131585,Cardamine trifolia,Lichtansprüche,enum,absonnig,NULL
+131585,Cardamine trifolia,Lichtansprüche,enum,halbschattig,NULL
+131585,Cardamine trifolia,"Lage, Exposition",str,anpassungsfähig,NULL
+131585,Cardamine trifolia,"Lage, Exposition",str,kühleliebend,NULL
+131585,Cardamine trifolia,Bodenstruktur,str,durchlässig,NULL
+131585,Cardamine trifolia,Humusbedarf,str,hoch,NULL
+131585,Cardamine trifolia,Bodenreaktion,str,"pH5,5 - 5,9","schwach, mäßig sauer (pH5,5 - 5,9)"
+131585,Cardamine trifolia,Bodenreaktion,str,"pH6,0 - 6,9","neutral (pH6,0 - 6,9)"
+131585,Cardamine trifolia,Bodenreaktion,str,"pH7,0 - 7,5","schwach, mäßig kalkhaltig (pH7,0 - 7,5)"
+131585,Cardamine trifolia,Nährstoffbedarf,str,"mittel, normal, ausgeglichen",NULL
+131585,Cardamine trifolia,Bodenart,str,"lehmig, sandig",NULL
+131585,Cardamine trifolia,Bodenart,str,steinreich,NULL
+131585,Cardamine trifolia,Bodenart,str,"humos, sandig humos",NULL
+131585,Cardamine trifolia,Sichtungswerte BdS,str,* (gut),NULL
+131585,Cardamine trifolia,Pflegehinweis,str,An optimalen Standorten kaum Pflege nötig. Siehe Zuordnung zu den Lebensbereichen.,NULL
+131585,Cardamine trifolia,Pflegehinweis,str,Rückschnitt der Stängel im Herbst bis Spätherbst,NULL
+131585,Cardamine trifolia,Pflegehinweis,str,Rückschnitt abgeblühter Blütenstände bis zu den oberen Stängelblättern,NULL
+131585,Cardamine trifolia,Vermehrung vegetativ,str,Stecklinge im Herbst bis Winter,NULL
+131585,Cardamine trifolia,Vermehrung generativ,str,"Normalkeimer, die Samen keimen meist leicht und kurzzeitig",NULL
+131585,Cardamine trifolia,Vermehrung generativ,str,Aussaat im Frühling,NULL
+131585,Cardamine trifolia,Blütenfüllung,enum,einfach,NULL
+139451,Centaurea jacea,Deutscher Name,str,Wiesen-Flockenblume,NULL
+139451,Centaurea jacea,Pflanzengruppe,str,Stauden,NULL
+139451,Centaurea jacea,Herkunft,enum,Heimisch,NULL
+139451,Centaurea jacea,Blattspreite,str,"einfach, ungetreilt",NULL
+139451,Centaurea jacea,Blattform/-Umriss,str,lanzettlich,NULL
+139451,Centaurea jacea,Blattstellung,str,gestielt,NULL
+139451,Centaurea jacea,Blattstellung,str,grundständig,NULL
+139451,Centaurea jacea,Blütezeit von,enum,Juni,NULL
+139451,Centaurea jacea,Blütezeit bis,enum,September,NULL
+139451,Centaurea jacea,Blatt-Farbgruppe HAE,enum,grün,NULL
+139451,Centaurea jacea,Blattfarbe HAE,enum,grün,NULL
+139451,Centaurea jacea,Blattfarbe CD,str,grün,NULL
+139451,Centaurea jacea,Blüten-Farbgruppe,enum,purpur,NULL
+139451,Centaurea jacea,Blütenfarbe,str,purpur,NULL
+139451,Centaurea jacea,Winterhärtezone,enum,Z5,-23°C bis -28°C
+139451,Centaurea jacea,Blütenfarbe HAE,enum,purpur,NULL
+139451,Centaurea jacea,Wuchsform,str,aufrechte Stängel mit grundständigem Blattschopf,NULL
+139451,Centaurea jacea,Bodenfeuchte,str,frisch,frisch
+139451,Centaurea jacea,Bodenfeuchte,str,trocken,trocken
+139451,Centaurea jacea,Blüten-Hoehe_v,size mm,30,NULL
+139451,Centaurea jacea,Blüten_Hoehe_b,size mm,60,NULL
+139451,Centaurea jacea,Wuchsverhalten,str,"horstig, lockerhorstig, horstbildend",NULL
+139451,Centaurea jacea,Blattphase,str,sommergrün,NULL
+139451,Centaurea jacea,Blattrand,str,ganzrandig,NULL
+139451,Centaurea jacea,Blatteigenschaften,str,fiedernervig,NULL
+139451,Centaurea jacea,Blatteigenschaften,str,matt,NULL
+139451,Centaurea jacea,Blatteigenschaften,str,rauh,NULL
+139451,Centaurea jacea,Blütenstängel,str,"aufrecht, locker bis straff aufrecht",NULL
+139451,Centaurea jacea,Blütenstängel,str,beblättert,NULL
+139451,Centaurea jacea,Blütenstängel,str,verzweigt,NULL
+139451,Centaurea jacea,Stängelblätter,str,wechselständig,NULL
+139451,Centaurea jacea,Stängelblätter,str,sitzend,NULL
+139451,Centaurea jacea,Blütenstand,str,körbchenartig,NULL
+139451,Centaurea jacea,Blütenstand,str,einzeln,NULL
+139451,Centaurea jacea,Blütenstand,str,ästig,NULL
+139451,Centaurea jacea,Blütengröße innerhalb der Gruppe,str,Blume groß,NULL
+139451,Centaurea jacea,Blütenstellung,str,aufwärts zeigend,NULL
+139451,Centaurea jacea,"Fruchtart, Samen",str,Samen mit Pappus,NULL
+139451,Centaurea jacea,Lebensbereich,str,M,Matten
+139451,Centaurea jacea,Lebensbereich,str,Fr,Freifläche
+139451,Centaurea jacea,Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+139451,Centaurea jacea,Pflanzabstand von,size cm,30,NULL
+139451,Centaurea jacea,Pflanzabstand bis,size cm,40,NULL
+139451,Centaurea jacea,Lichtansprüche,enum,sonnig,NULL
+139451,Centaurea jacea,"Lage, Exposition",str,anpassungsfähig,NULL
+139451,Centaurea jacea,Bodenstruktur,str,durchlässig,NULL
+139451,Centaurea jacea,Humusbedarf,str,gering,NULL
+139451,Centaurea jacea,Bodenreaktion,str,"pH5,5 - 5,9","schwach, mäßig sauer (pH5,5 - 5,9)"
+139451,Centaurea jacea,Bodenreaktion,str,"pH6,0 - 6,9","neutral (pH6,0 - 6,9)"
+139451,Centaurea jacea,Bodenreaktion,str,"pH7,0 - 7,5","schwach, mäßig kalkhaltig (pH7,0 - 7,5)"
+139451,Centaurea jacea,Nährstoffbedarf,str,"mittel, normal, ausgeglichen",NULL
+139451,Centaurea jacea,Bodenart,str,"lehmig, sandig",NULL
+139451,Centaurea jacea,Bodenart,str,"humos, sandig humos",NULL
+139451,Centaurea jacea,Sichtungswerte BdS,str,bisher ohne Bewertung,NULL
+139451,Centaurea jacea,Pflegehinweis,str,An optimalen Standorten kaum Pflege nötig. Siehe Zuordnung zu den Lebensbereichen.,NULL
+139451,Centaurea jacea,Pflegehinweis,str,Rückschnitt abgeblühter Stängel bis zum grundständigen Blattschopf,NULL
+139451,Centaurea jacea,Vermehrung generativ,str,"Normalkeimer, die Samen keimen meist leicht und kurzzeitig",NULL
+139451,Centaurea jacea,Vermehrung generativ,str,Aussaat im Frühling,NULL
+139451,Centaurea jacea,Allgemeine Verwendungsmöglichkeiten,str,Insektennährpflanze,NULL
+139451,Centaurea jacea,Blütenfüllung,enum,einfach,NULL
+154813,Cichorium intybus var. intybus,Deutscher Name,str,Gewöhnliche Wegwarte,NULL
+154813,Cichorium intybus var. intybus,Pflanzengruppe,str,Stauden,NULL
+154813,Cichorium intybus var. intybus,Herkunft,enum,Heimisch,NULL
+154813,Cichorium intybus var. intybus,Blattspreite,str,"fiederteilig, fiederschnittig, fiederspaltig",NULL
+154813,Cichorium intybus var. intybus,Blattform/-Umriss,str,zungen- bis spatelförmig,NULL
+154813,Cichorium intybus var. intybus,Blattstellung,str,rosettig,NULL
+154813,Cichorium intybus var. intybus,Blütezeit von,enum,Juli,NULL
+154813,Cichorium intybus var. intybus,Blütezeit bis,enum,September,NULL
+154813,Cichorium intybus var. intybus,Blatt-Farbgruppe HAE,enum,grün,NULL
+154813,Cichorium intybus var. intybus,Blattfarbe HAE,enum,dunkel-grün,NULL
+154813,Cichorium intybus var. intybus,Blattfarbe CD,str,dunkel-grün,NULL
+154813,Cichorium intybus var. intybus,Blüten-Farbgruppe,enum,blau,NULL
+154813,Cichorium intybus var. intybus,Blütenfarbe,str,hell-blau,NULL
+154813,Cichorium intybus var. intybus,Winterhärtezone,enum,Z3,-35°C bis -39°C
+154813,Cichorium intybus var. intybus,Blütenfarbe HAE,enum,hell-blau,NULL
+154813,Cichorium intybus var. intybus,Wuchsform,str,aufrechte Stängel mit grundständigem Blattschopf,NULL
+154813,Cichorium intybus var. intybus,Wuchsform,str,rosettenartig,NULL
+154813,Cichorium intybus var. intybus,Bodenfeuchte,str,frisch,frisch
+154813,Cichorium intybus var. intybus,Bodenfeuchte,str,trocken,trocken
+154813,Cichorium intybus var. intybus,Blüten-Hoehe_v,size mm,30,NULL
+154813,Cichorium intybus var. intybus,Blüten_Hoehe_b,size mm,100,NULL
+154813,Cichorium intybus var. intybus,Wuchsverhalten,str,"horstig, lockerhorstig, horstbildend",NULL
+154813,Cichorium intybus var. intybus,Blattphase,str,sommergrün,NULL
+154813,Cichorium intybus var. intybus,Blattrand,str,spitzlappig,NULL
+154813,Cichorium intybus var. intybus,Blatteigenschaften,str,matt,NULL
+154813,Cichorium intybus var. intybus,Blatteigenschaften,str,derb,NULL
+154813,Cichorium intybus var. intybus,Blatteigenschaften,str,"einnervig, parallelnervig, ovalnervig",NULL
+154813,Cichorium intybus var. intybus,Blütenstängel,str,wenig beblättert,NULL
+154813,Cichorium intybus var. intybus,Blütenstängel,str,verzweigt,NULL
+154813,Cichorium intybus var. intybus,Stängelblätter,str,wechselständig,NULL
+154813,Cichorium intybus var. intybus,Stängelblätter,str,sitzend,NULL
+154813,Cichorium intybus var. intybus,Blütenstand,str,körbchenartig,NULL
+154813,Cichorium intybus var. intybus,Blütenstand,str,achselständig,NULL
+154813,Cichorium intybus var. intybus,Blütenstand,str,gabelästig,NULL
+154813,Cichorium intybus var. intybus,Blütengröße innerhalb der Gruppe,str,Blume mittel,NULL
+154813,Cichorium intybus var. intybus,Blütenstellung,str,aufwärts zeigend,NULL
+154813,Cichorium intybus var. intybus,"Fruchtart, Samen",str,Samen ohne Pappus,NULL
+154813,Cichorium intybus var. intybus,Lebensbereich,str,Fr,Freifläche
+154813,Cichorium intybus var. intybus,Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+154813,Cichorium intybus var. intybus,Pflanzabstand von,size cm,50,NULL
+154813,Cichorium intybus var. intybus,Pflanzabstand bis,size cm,60,NULL
+154813,Cichorium intybus var. intybus,Lichtansprüche,enum,sonnig,NULL
+154813,Cichorium intybus var. intybus,Bodenstruktur,str,durchlässig,NULL
+154813,Cichorium intybus var. intybus,Bodenstruktur,str,gut durchlässig,NULL
+154813,Cichorium intybus var. intybus,Humusbedarf,str,normal,NULL
+154813,Cichorium intybus var. intybus,Bodenreaktion,str,"pH7,0 - 7,5","schwach, mäßig kalkhaltig (pH7,0 - 7,5)"
+154813,Cichorium intybus var. intybus,Bodenreaktion,str,"pH7,5 - 8,0","kalkhaltig, kalkreich, alkalisch (pH7,5 - 8,0)"
+154813,Cichorium intybus var. intybus,Nährstoffbedarf,str,"mittel, normal, ausgeglichen",NULL
+154813,Cichorium intybus var. intybus,Nährstoffbedarf,str,"hoch, nährstoffreich",NULL
+154813,Cichorium intybus var. intybus,Bodenart,str,"lehmig, sandig",NULL
+154813,Cichorium intybus var. intybus,Bodenart,str,"humos, sandig humos",NULL
+154813,Cichorium intybus var. intybus,Sichtungswerte BdS,str,bisher ohne Bewertung,NULL
+154813,Cichorium intybus var. intybus,Pflegehinweis,str,Rückschnitt der Stängel im Herbst bis Spätherbst,NULL
+154813,Cichorium intybus var. intybus,Vermehrung generativ,str,Aussaat sofort nach der Samenreife,NULL
+154813,Cichorium intybus var. intybus,Vermehrung generativ,str,"Normalkeimer, die Samen keimen meist leicht und kurzzeitig",NULL
+154813,Cichorium intybus var. intybus,Vermehrung generativ,str,Aussaat im Frühling,NULL
+154813,Cichorium intybus var. intybus,Allgemeine Verwendungsmöglichkeiten,str,Heil- und Medizinpflanzen,NULL
+154813,Cichorium intybus var. intybus,Allgemeine Verwendungsmöglichkeiten,str,Insektennährpflanze,NULL
+154813,Cichorium intybus var. intybus,Blütenfüllung,enum,einfach,NULL
+154878,Cichorium intybus var. sativum,Deutscher Name,str,Kaffee-Zichorie,NULL
+154878,Cichorium intybus var. sativum,Deutscher Name,str,Wurzel-Zichorie,NULL
+154878,Cichorium intybus var. sativum,Pflanzengruppe,str,Stauden,NULL
+154878,Cichorium intybus var. sativum,Herkunft,enum,"Züchtung, Auslese, Cultivar",NULL
+154878,Cichorium intybus var. sativum,Blattspreite,str,"fiederteilig, fiederschnittig, fiederspaltig",NULL
+154878,Cichorium intybus var. sativum,Blattform/-Umriss,str,zungen- bis spatelförmig,NULL
+154878,Cichorium intybus var. sativum,Blattstellung,str,rosettig,NULL
+154878,Cichorium intybus var. sativum,Blütezeit von,enum,Juli,NULL
+154878,Cichorium intybus var. sativum,Blütezeit bis,enum,September,NULL
+154878,Cichorium intybus var. sativum,Blattfarbe CD,str,dunkel-grün,NULL
+154878,Cichorium intybus var. sativum,Blüten-Farbgruppe,enum,blau,NULL
+154878,Cichorium intybus var. sativum,Blütenfarbe,str,blau,NULL
+154878,Cichorium intybus var. sativum,Wuchsform,str,aufrechte Stängel mit grundständigem Blattschopf,NULL
+154878,Cichorium intybus var. sativum,Wuchsform,str,rosettenartig,NULL
+154878,Cichorium intybus var. sativum,Bodenfeuchte,str,frisch,frisch
+154878,Cichorium intybus var. sativum,Bodenfeuchte,str,trocken,trocken
+154878,Cichorium intybus var. sativum,Blüten-Hoehe_v,size mm,60,NULL
+154878,Cichorium intybus var. sativum,Blüten_Hoehe_b,size mm,100,NULL
+154878,Cichorium intybus var. sativum,Wuchsverhalten,str,"horstig, lockerhorstig, horstbildend",NULL
+154878,Cichorium intybus var. sativum,Blattphase,str,sommergrün,NULL
+154878,Cichorium intybus var. sativum,Blattrand,str,spitzlappig,NULL
+154878,Cichorium intybus var. sativum,Blatteigenschaften,str,matt,NULL
+154878,Cichorium intybus var. sativum,Blatteigenschaften,str,derb,NULL
+154878,Cichorium intybus var. sativum,Blatteigenschaften,str,"einnervig, parallelnervig, ovalnervig",NULL
+154878,Cichorium intybus var. sativum,Blütenstängel,str,wenig beblättert,NULL
+154878,Cichorium intybus var. sativum,Blütenstängel,str,verzweigt,NULL
+154878,Cichorium intybus var. sativum,Stängelblätter,str,wechselständig,NULL
+154878,Cichorium intybus var. sativum,Stängelblätter,str,sitzend,NULL
+154878,Cichorium intybus var. sativum,Blütenstand,str,körbchenartig,NULL
+154878,Cichorium intybus var. sativum,Blütenstand,str,achselständig,NULL
+154878,Cichorium intybus var. sativum,Blütenstand,str,gabelästig,NULL
+154878,Cichorium intybus var. sativum,Blütengröße innerhalb der Gruppe,str,Blume mittel,NULL
+154878,Cichorium intybus var. sativum,Blütenstellung,str,aufwärts zeigend,NULL
+154878,Cichorium intybus var. sativum,"Fruchtart, Samen",str,Samen ohne Pappus,NULL
+154878,Cichorium intybus var. sativum,Lebensbereich,str,Fr,Freifläche
+154878,Cichorium intybus var. sativum,Lichtansprüche,enum,sonnig,NULL
+154878,Cichorium intybus var. sativum,Bodenstruktur,str,durchlässig,NULL
+154878,Cichorium intybus var. sativum,Bodenstruktur,str,gut durchlässig,NULL
+154878,Cichorium intybus var. sativum,Humusbedarf,str,normal,NULL
+154878,Cichorium intybus var. sativum,Bodenreaktion,str,"pH7,0 - 7,5","schwach, mäßig kalkhaltig (pH7,0 - 7,5)"
+154878,Cichorium intybus var. sativum,Bodenreaktion,str,"pH7,5 - 8,0","kalkhaltig, kalkreich, alkalisch (pH7,5 - 8,0)"
+154878,Cichorium intybus var. sativum,Nährstoffbedarf,str,"mittel, normal, ausgeglichen",NULL
+154878,Cichorium intybus var. sativum,Nährstoffbedarf,str,"hoch, nährstoffreich",NULL
+154878,Cichorium intybus var. sativum,Bodenart,str,"lehmig, sandig",NULL
+154878,Cichorium intybus var. sativum,Bodenart,str,"humos, sandig humos",NULL
+154878,Cichorium intybus var. sativum,Pflegehinweis,str,Rückschnitt der Stängel im Herbst bis Spätherbst,NULL
+154878,Cichorium intybus var. sativum,Vermehrung generativ,str,Aussaat sofort nach der Samenreife,NULL
+154878,Cichorium intybus var. sativum,Vermehrung generativ,str,"Normalkeimer, die Samen keimen meist leicht und kurzzeitig",NULL
+154878,Cichorium intybus var. sativum,Vermehrung generativ,str,Aussaat im Frühling,NULL
+154878,Cichorium intybus var. sativum,Blütenfüllung,enum,einfach,NULL
+332960,Hieracium bornmuelleri,Deutscher Name,str,Bornmuellers Habichtskraut,NULL
+332960,Hieracium bornmuelleri,Pflanzengruppe,str,Stauden,NULL
+332960,Hieracium bornmuelleri,Herkunft,enum,Fremdländisch,NULL
+332960,Hieracium bornmuelleri,Blattspreite,str,"einfach, ungetreilt",NULL
+332960,Hieracium bornmuelleri,Blattform/-Umriss,str,breitlanzettlich,NULL
+332960,Hieracium bornmuelleri,Blattstellung,str,gestielt,NULL
+332960,Hieracium bornmuelleri,Blattstellung,str,grundständig,NULL
+332960,Hieracium bornmuelleri,Blütezeit von,enum,Juni,NULL
+332960,Hieracium bornmuelleri,Blütezeit bis,enum,August,NULL
+332960,Hieracium bornmuelleri,Blatt-Farbgruppe HAE,enum,grün,NULL
+332960,Hieracium bornmuelleri,Blattfarbe HAE,enum,grün,NULL
+332960,Hieracium bornmuelleri,Blattfarbe CD,str,grün,NULL
+332960,Hieracium bornmuelleri,Blüten-Farbgruppe,enum,gelb,NULL
+332960,Hieracium bornmuelleri,Blütenfarbe,str,hell-gelb,NULL
+332960,Hieracium bornmuelleri,Winterhärtezone,enum,Z7,-12°C bis -17°C
+332960,Hieracium bornmuelleri,Blütenfarbe HAE,enum,hell-gelb,NULL
+332960,Hieracium bornmuelleri,Wuchsform,str,aufrechte Stängel mit grundständigem Blattschopf,NULL
+332960,Hieracium bornmuelleri,Wuchsform,str,rosettenartig,NULL
+332960,Hieracium bornmuelleri,Bodenfeuchte,str,frisch,frisch
+332960,Hieracium bornmuelleri,Bodenfeuchte,str,trocken,trocken
+332960,Hieracium bornmuelleri,Blüten-Hoehe_v,size mm,20,NULL
+332960,Hieracium bornmuelleri,Blüten_Hoehe_b,size mm,30,NULL
+332960,Hieracium bornmuelleri,Wuchsverhalten,str,"horstig, lockerhorstig, horstbildend",NULL
+332960,Hieracium bornmuelleri,Blattphase,str,wintergrün,NULL
+332960,Hieracium bornmuelleri,Blattrand,str,ganzrandig,NULL
+332960,Hieracium bornmuelleri,Blatteigenschaften,str,fiedernervig,NULL
+332960,Hieracium bornmuelleri,Blatteigenschaften,str,"flaumig, filzig",NULL
+332960,Hieracium bornmuelleri,Blatteigenschaften,str,wollig,NULL
+332960,Hieracium bornmuelleri,Blütenstängel,str,kurzstängelig,NULL
+332960,Hieracium bornmuelleri,Blütenstängel,str,"aufrecht, locker bis straff aufrecht",NULL
+332960,Hieracium bornmuelleri,Blütenstängel,str,beblättert,NULL
+332960,Hieracium bornmuelleri,Blütenstängel,str,wenig verzweigt,NULL
+332960,Hieracium bornmuelleri,Stängelblätter,str,"fehlend, keine",NULL
+332960,Hieracium bornmuelleri,Blütenstand,str,körbchenartig,NULL
+332960,Hieracium bornmuelleri,Blütenstand,str,einzeln,NULL
+332960,Hieracium bornmuelleri,Blütengröße innerhalb der Gruppe,str,Blume klein,NULL
+332960,Hieracium bornmuelleri,Blütenstellung,str,aufwärts zeigend,NULL
+332960,Hieracium bornmuelleri,"Fruchtart, Samen",str,Samen mit Pappus,NULL
+332960,Hieracium bornmuelleri,Lebensbereich,str,St,Steinanlagen
+332960,Hieracium bornmuelleri,Lebensbereich,str,M,Matten
+332960,Hieracium bornmuelleri,Lebensbereich,str,Fr,Freifläche
+332960,Hieracium bornmuelleri,Geselligkeitsstufe,enum,Stufe III (10-20 Pflanzen in größeren Gruppen),NULL
+332960,Hieracium bornmuelleri,Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+332960,Hieracium bornmuelleri,Pflanzabstand von,size cm,20,NULL
+332960,Hieracium bornmuelleri,Pflanzabstand bis,size cm,30,NULL
+332960,Hieracium bornmuelleri,Lichtansprüche,enum,sonnig,NULL
+332960,Hieracium bornmuelleri,"Lage, Exposition",str,anpassungsfähig,NULL
+332960,Hieracium bornmuelleri,Bodenstruktur,str,gut durchlässig,NULL
+332960,Hieracium bornmuelleri,Humusbedarf,str,gering,NULL
+332960,Hieracium bornmuelleri,Bodenreaktion,str,"pH5,5 - 5,9","schwach, mäßig sauer (pH5,5 - 5,9)"
+332960,Hieracium bornmuelleri,Bodenreaktion,str,"pH6,0 - 6,9","neutral (pH6,0 - 6,9)"
+332960,Hieracium bornmuelleri,Bodenreaktion,str,"pH4,6 - 5,5","sauer/kalkfrei (pH4,6 - 5,5)"
+332960,Hieracium bornmuelleri,Nährstoffbedarf,str,"gering, nährstoffarm",NULL
+332960,Hieracium bornmuelleri,Bodenart,str,"lehmig, sandig",NULL
+332960,Hieracium bornmuelleri,Bodenart,str,steinreich,NULL
+332960,Hieracium bornmuelleri,Bodenart,str,"humos, sandig humos",NULL
+332960,Hieracium bornmuelleri,Sichtungswerte BdS,str,bisher ohne Bewertung,NULL
+332960,Hieracium bornmuelleri,Pflegehinweis,str,An optimalen Standorten kaum Pflege nötig. Siehe Zuordnung zu den Lebensbereichen.,NULL
+332960,Hieracium bornmuelleri,Pflegehinweis,str,Rückschnitt vor der Samenreife um Selbstaussaat zu vermeiden,NULL
+332960,Hieracium bornmuelleri,Vermehrung vegetativ,str,Teilung im Frühling,NULL
+332960,Hieracium bornmuelleri,Vermehrung generativ,str,"Normalkeimer, die Samen keimen meist leicht und kurzzeitig",NULL
+332960,Hieracium bornmuelleri,Vermehrung generativ,str,Aussaat im Frühling,NULL
+332960,Hieracium bornmuelleri,Blütenfüllung,enum,einfach,NULL
+333382,Hieracium pilosella,Deutscher Name,str,Kleines Habichtskraut,NULL
+333382,Hieracium pilosella,Pflanzengruppe,str,Stauden,NULL
+333382,Hieracium pilosella,Herkunft,enum,Heimisch,NULL
+333382,Hieracium pilosella,Blattspreite,str,"einfach, ungetreilt",NULL
+333382,Hieracium pilosella,Blattform/-Umriss,str,lanzettlich,NULL
+333382,Hieracium pilosella,Blattform/-Umriss,str,zungen- bis spatelförmig,NULL
+333382,Hieracium pilosella,Blattstellung,str,rosettig,NULL
+333382,Hieracium pilosella,Blattstellung,str,sitzend,NULL
+333382,Hieracium pilosella,Blattstellung,str,grundständig,NULL
+333382,Hieracium pilosella,Blütezeit von,enum,Juni,NULL
+333382,Hieracium pilosella,Blütezeit bis,enum,August,NULL
+333382,Hieracium pilosella,Blatt-Farbgruppe HAE,enum,grün,NULL
+333382,Hieracium pilosella,Blattfarbe HAE,enum,grün,NULL
+333382,Hieracium pilosella,Blattfarbe CD,str,grün,NULL
+333382,Hieracium pilosella,Blüten-Farbgruppe,enum,gelb,NULL
+333382,Hieracium pilosella,Blütenfarbe,str,hell-gelb,NULL
+333382,Hieracium pilosella,Winterhärtezone,enum,Z5,-23°C bis -28°C
+333382,Hieracium pilosella,Blütenfarbe HAE,enum,hell-gelb,NULL
+333382,Hieracium pilosella,Wuchsform,str,"teppichartig, mattenartig",NULL
+333382,Hieracium pilosella,Bodenfeuchte,str,trocken,trocken
+333382,Hieracium pilosella,Blatt-Hoehe_v,size mm,10,NULL
+333382,Hieracium pilosella,Blatt-Hoehe_b,size mm,10,NULL
+333382,Hieracium pilosella,Blüten-Hoehe_v,size mm,20,NULL
+333382,Hieracium pilosella,Blüten_Hoehe_b,size mm,20,NULL
+333382,Hieracium pilosella,Wuchsverhalten,str,ausläufertreibend,NULL
+333382,Hieracium pilosella,Blattphase,str,wintergrün,NULL
+333382,Hieracium pilosella,Blattrand,str,ganzrandig,NULL
+333382,Hieracium pilosella,Blatteigenschaften,str,fiedernervig,NULL
+333382,Hieracium pilosella,Blatteigenschaften,str,matt,NULL
+333382,Hieracium pilosella,Blatteigenschaften,str,"fein behaart, teils drüsig",NULL
+333382,Hieracium pilosella,Blütenstängel,str,unverwzeigt,NULL
+333382,Hieracium pilosella,Blütenstängel,str,"aufrecht, locker bis straff aufrecht",NULL
+333382,Hieracium pilosella,Blütenstängel,str,"kahl, nicht beblättert",NULL
+333382,Hieracium pilosella,Blütenstängel,str,"stängellos, langstielig",NULL
+333382,Hieracium pilosella,Stängelblätter,str,"fehlend, keine",NULL
+333382,Hieracium pilosella,Blütenstand,str,körbchenartig,NULL
+333382,Hieracium pilosella,Blütenstand,str,einzeln,NULL
+333382,Hieracium pilosella,Blütengröße innerhalb der Gruppe,str,Blume klein,NULL
+333382,Hieracium pilosella,Blütenstellung,str,aufwärts zeigend,NULL
+333382,Hieracium pilosella,"Fruchtart, Samen",str,Samen mit Pappus,NULL
+333382,Hieracium pilosella,Lebensbereich,str,St,Steinanlagen
+333382,Hieracium pilosella,Lebensbereich,str,FS,Felssteppe
+333382,Hieracium pilosella,Lebensbereich,str,Fr,Freifläche
+333382,Hieracium pilosella,Lebensbereich,str,H,Heide
+333382,Hieracium pilosella,Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+333382,Hieracium pilosella,Pflanzabstand von,size cm,20,NULL
+333382,Hieracium pilosella,Pflanzabstand bis,size cm,30,NULL
+333382,Hieracium pilosella,Lichtansprüche,enum,sonnig,NULL
+333382,Hieracium pilosella,"Lage, Exposition",str,anpassungsfähig,NULL
+333382,Hieracium pilosella,Bodenstruktur,str,durchlässig,NULL
+333382,Hieracium pilosella,Humusbedarf,str,gering,NULL
+333382,Hieracium pilosella,Bodenreaktion,str,"pH5,5 - 5,9","schwach, mäßig sauer (pH5,5 - 5,9)"
+333382,Hieracium pilosella,Bodenreaktion,str,"pH4,6 - 5,5","sauer/kalkfrei (pH4,6 - 5,5)"
+333382,Hieracium pilosella,Nährstoffbedarf,str,"gering, nährstoffarm",NULL
+333382,Hieracium pilosella,Bodenart,str,"sandig, mineralisch",NULL
+333382,Hieracium pilosella,Bodenart,str,steinreich,NULL
+333382,Hieracium pilosella,Bodenart,str,"humos, sandig humos",NULL
+333382,Hieracium pilosella,Sichtungswerte BdS,str,bisher ohne Bewertung,NULL
+333382,Hieracium pilosella,Pflegehinweis,str,An optimalen Standorten kaum Pflege nötig. Siehe Zuordnung zu den Lebensbereichen.,NULL
+333382,Hieracium pilosella,Pflegehinweis,str,Rückschnitt vor der Samenreife um Selbstaussaat zu vermeiden,NULL
+333382,Hieracium pilosella,Vermehrung generativ,str,"Normalkeimer, die Samen keimen meist leicht und kurzzeitig",NULL
+333382,Hieracium pilosella,Vermehrung generativ,str,Aussaat im Frühling,NULL
+333382,Hieracium pilosella,Allgemeine Verwendungsmöglichkeiten,str,Insektennährpflanze,NULL
+333382,Hieracium pilosella,Allgemeine Verwendungsmöglichkeiten,str,extensive Dachbegrünung,NULL
+333382,Hieracium pilosella,Blütenfüllung,enum,einfach,NULL
+333382,Hieracium pilosella,Dachbegrünung geeignet,enum,ja,zur Dachbegrünung geeignet
+333519,Hieracium x rubrum,Deutscher Name,str,Rotblühendes Habichtskraut,NULL
+333519,Hieracium x rubrum,Pflanzengruppe,str,Stauden,NULL
+333519,Hieracium x rubrum,Herkunft,enum,"Züchtung, Auslese, Cultivar",NULL
+333519,Hieracium x rubrum,Blattspreite,str,"einfach, ungetreilt",NULL
+333519,Hieracium x rubrum,Blattform/-Umriss,str,lanzettlich,NULL
+333519,Hieracium x rubrum,Blattform/-Umriss,str,zungen- bis spatelförmig,NULL
+333519,Hieracium x rubrum,Blattstellung,str,rosettig,NULL
+333519,Hieracium x rubrum,Blattstellung,str,grundständig,NULL
+333519,Hieracium x rubrum,Blütezeit von,enum,Juni,NULL
+333519,Hieracium x rubrum,Blütezeit bis,enum,August,NULL
+333519,Hieracium x rubrum,Blatt-Farbgruppe HAE,enum,grün,NULL
+333519,Hieracium x rubrum,Blattfarbe HAE,enum,grün,NULL
+333519,Hieracium x rubrum,Blattfarbe CD,str,grün,NULL
+333519,Hieracium x rubrum,Blüten-Farbgruppe,enum,orange,NULL
+333519,Hieracium x rubrum,Blütenfarbe,str,orangerot,NULL
+333519,Hieracium x rubrum,Winterhärtezone,enum,Z5,-23°C bis -28°C
+333519,Hieracium x rubrum,Blütenfarbe HAE,enum,orangerot,NULL
+333519,Hieracium x rubrum,Wuchsform,str,rosettenartig,NULL
+333519,Hieracium x rubrum,Bodenfeuchte,str,frisch,frisch
+333519,Hieracium x rubrum,Bodenfeuchte,str,trocken,trocken
+333519,Hieracium x rubrum,Blatt-Hoehe_v,size mm,5,NULL
+333519,Hieracium x rubrum,Blatt-Hoehe_b,size mm,8,NULL
+333519,Hieracium x rubrum,Blüten-Hoehe_v,size mm,20,NULL
+333519,Hieracium x rubrum,Blüten_Hoehe_b,size mm,20,NULL
+333519,Hieracium x rubrum,Wuchsverhalten,str,ausläufertreibend,NULL
+333519,Hieracium x rubrum,Blattphase,str,wintergrün,NULL
+333519,Hieracium x rubrum,Blattrand,str,ganzrandig,NULL
+333519,Hieracium x rubrum,Blatteigenschaften,str,fiedernervig,NULL
+333519,Hieracium x rubrum,Blatteigenschaften,str,matt,NULL
+333519,Hieracium x rubrum,Blatteigenschaften,str,"fein behaart, teils drüsig",NULL
+333519,Hieracium x rubrum,Blütenstängel,str,unverwzeigt,NULL
+333519,Hieracium x rubrum,Blütenstängel,str,"aufrecht, locker bis straff aufrecht",NULL
+333519,Hieracium x rubrum,Blütenstängel,str,"kahl, nicht beblättert",NULL
+333519,Hieracium x rubrum,Blütenstängel,str,"stängellos, langstielig",NULL
+333519,Hieracium x rubrum,Stängelblätter,str,"fehlend, keine",NULL
+333519,Hieracium x rubrum,Blütenstand,str,körbchenartig,NULL
+333519,Hieracium x rubrum,Blütenstand,str,einzeln,NULL
+333519,Hieracium x rubrum,Blütengröße innerhalb der Gruppe,str,Blume klein,NULL
+333519,Hieracium x rubrum,Blütenstellung,str,aufwärts zeigend,NULL
+333519,Hieracium x rubrum,"Fruchtart, Samen",str,Samen mit Pappus,NULL
+333519,Hieracium x rubrum,Lebensbereich,str,St,Steinanlagen
+333519,Hieracium x rubrum,Lebensbereich,str,FS,Felssteppe
+333519,Hieracium x rubrum,Lebensbereich,str,Fr,Freifläche
+333519,Hieracium x rubrum,Lebensbereich,str,H,Heide
+333519,Hieracium x rubrum,Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+333519,Hieracium x rubrum,Pflanzabstand von,size cm,20,NULL
+333519,Hieracium x rubrum,Pflanzabstand bis,size cm,30,NULL
+333519,Hieracium x rubrum,Lichtansprüche,enum,sonnig,NULL
+333519,Hieracium x rubrum,"Lage, Exposition",str,anpassungsfähig,NULL
+333519,Hieracium x rubrum,Bodenstruktur,str,durchlässig,NULL
+333519,Hieracium x rubrum,Humusbedarf,str,gering,NULL
+333519,Hieracium x rubrum,Bodenreaktion,str,"pH5,5 - 5,9","schwach, mäßig sauer (pH5,5 - 5,9)"
+333519,Hieracium x rubrum,Bodenreaktion,str,"pH4,6 - 5,5","sauer/kalkfrei (pH4,6 - 5,5)"
+333519,Hieracium x rubrum,Nährstoffbedarf,str,"gering, nährstoffarm",NULL
+333519,Hieracium x rubrum,Bodenart,str,"sandig, mineralisch",NULL
+333519,Hieracium x rubrum,Bodenart,str,steinreich,NULL
+333519,Hieracium x rubrum,Bodenart,str,"humos, sandig humos",NULL
+333519,Hieracium x rubrum,Sichtungswerte BdS,str,* (gut),NULL
+333519,Hieracium x rubrum,Pflegehinweis,str,An optimalen Standorten kaum Pflege nötig. Siehe Zuordnung zu den Lebensbereichen.,NULL
+333519,Hieracium x rubrum,Vermehrung vegetativ,str,Teilung im Frühling,NULL
+333519,Hieracium x rubrum,Vermehrung vegetativ,str,Teilung nach der Blüte,NULL
+333519,Hieracium x rubrum,Allgemeine Verwendungsmöglichkeiten,str,Insektennährpflanze,NULL
+333519,Hieracium x rubrum,Allgemeine Verwendungsmöglichkeiten,str,extensive Dachbegrünung,NULL
+333519,Hieracium x rubrum,Blütenfüllung,enum,einfach,NULL
+333519,Hieracium x rubrum,Dachbegrünung geeignet,enum,ja,zur Dachbegrünung geeignet
+333598,Hieracium umbellatum,Deutscher Name,str,Doldiges Habichtskraut,NULL
+333598,Hieracium umbellatum,Pflanzengruppe,str,Stauden,NULL
+333598,Hieracium umbellatum,Herkunft,enum,Heimisch,NULL
+333598,Hieracium umbellatum,Blattspreite,str,"einfach, ungetreilt",NULL
+333598,Hieracium umbellatum,Blattform/-Umriss,str,lanzettlich,NULL
+333598,Hieracium umbellatum,Blattform/-Umriss,str,zungen- bis spatelförmig,NULL
+333598,Hieracium umbellatum,Blattform/-Umriss,str,lineal bis lineallanzettlich,NULL
+333598,Hieracium umbellatum,Blütezeit von,enum,August,NULL
+333598,Hieracium umbellatum,Blütezeit bis,enum,Oktober,NULL
+333598,Hieracium umbellatum,Blatt-Farbgruppe HAE,enum,grün,NULL
+333598,Hieracium umbellatum,Blattfarbe HAE,enum,grün,NULL
+333598,Hieracium umbellatum,Blattfarbe CD,str,grün,NULL
+333598,Hieracium umbellatum,Blüten-Farbgruppe,enum,gelb,NULL
+333598,Hieracium umbellatum,Blütenfarbe,str,gelb,NULL
+333598,Hieracium umbellatum,Winterhärtezone,enum,Z5,-23°C bis -28°C
+333598,Hieracium umbellatum,Blütenfarbe HAE,enum,gelb,NULL
+333598,Hieracium umbellatum,Wuchsform,str,aufrecht bis straff aufrecht,NULL
+333598,Hieracium umbellatum,Bodenfeuchte,str,trocken,trocken
+333598,Hieracium umbellatum,Blüten-Hoehe_v,size mm,30,NULL
+333598,Hieracium umbellatum,Blüten_Hoehe_b,size mm,120,NULL
+333598,Hieracium umbellatum,Wuchsverhalten,str,"horstig, lockerhorstig, horstbildend",NULL
+333598,Hieracium umbellatum,Blattphase,str,sommergrün,NULL
+333598,Hieracium umbellatum,Blattrand,str,ganzrandig,NULL
+333598,Hieracium umbellatum,Blatteigenschaften,str,fiedernervig,NULL
+333598,Hieracium umbellatum,Blatteigenschaften,str,matt,NULL
+333598,Hieracium umbellatum,Blatteigenschaften,str,"fein behaart, teils drüsig",NULL
+333598,Hieracium umbellatum,Blütenstängel,str,"aufrecht, locker bis straff aufrecht",NULL
+333598,Hieracium umbellatum,Blütenstängel,str,beblättert,NULL
+333598,Hieracium umbellatum,Blütenstängel,str,wenig verzweigt,NULL
+333598,Hieracium umbellatum,Blütenstängel,str,langstängelig,NULL
+333598,Hieracium umbellatum,Stängelblätter,str,wechselständig,NULL
+333598,Hieracium umbellatum,Stängelblätter,str,sitzend,NULL
+333598,Hieracium umbellatum,Blütenstand,str,"mehrblütig, endständig",NULL
+333598,Hieracium umbellatum,Blütenstand,str,körbchenartig,NULL
+333598,Hieracium umbellatum,Blütenstand,str,"doldig, trug-, scheindoldig",NULL
+333598,Hieracium umbellatum,Blütenstand,str,achselständig,NULL
+333598,Hieracium umbellatum,Blütengröße innerhalb der Gruppe,str,Blume klein,NULL
+333598,Hieracium umbellatum,Blütenstellung,str,aufwärts zeigend,NULL
+333598,Hieracium umbellatum,"Fruchtart, Samen",str,Samen mit Pappus,NULL
+333598,Hieracium umbellatum,Lebensbereich,str,GR,Gehölzrand
+333598,Hieracium umbellatum,Lebensbereich,str,Fr,Freifläche
+333598,Hieracium umbellatum,Lebensbereich,str,G,Gehölz
+333598,Hieracium umbellatum,Lebensbereich,str,H,Heide
+333598,Hieracium umbellatum,Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+333598,Hieracium umbellatum,Pflanzabstand von,size cm,20,NULL
+333598,Hieracium umbellatum,Pflanzabstand bis,size cm,30,NULL
+333598,Hieracium umbellatum,Lichtansprüche,enum,sonnig,NULL
+333598,Hieracium umbellatum,Lichtansprüche,enum,absonnig,NULL
+333598,Hieracium umbellatum,Lichtansprüche,enum,halbschattig,NULL
+333598,Hieracium umbellatum,"Lage, Exposition",str,wärmeliebend,NULL
+333598,Hieracium umbellatum,"Lage, Exposition",str,anpassungsfähig,NULL
+333598,Hieracium umbellatum,Bodenstruktur,str,gut durchlässig,NULL
+333598,Hieracium umbellatum,Humusbedarf,str,gering,NULL
+333598,Hieracium umbellatum,Bodenreaktion,str,"pH5,5 - 5,9","schwach, mäßig sauer (pH5,5 - 5,9)"
+333598,Hieracium umbellatum,Bodenreaktion,str,"pH6,0 - 6,9","neutral (pH6,0 - 6,9)"
+333598,Hieracium umbellatum,Bodenreaktion,str,"pH4,6 - 5,5","sauer/kalkfrei (pH4,6 - 5,5)"
+333598,Hieracium umbellatum,Nährstoffbedarf,str,"gering, nährstoffarm",NULL
+333598,Hieracium umbellatum,Bodenart,str,"lehmig, sandig",NULL
+333598,Hieracium umbellatum,Bodenart,str,"humos, sandig humos",NULL
+333598,Hieracium umbellatum,Sichtungswerte BdS,str,bisher ohne Bewertung,NULL
+333598,Hieracium umbellatum,Pflegehinweis,str,An optimalen Standorten kaum Pflege nötig. Siehe Zuordnung zu den Lebensbereichen.,NULL
+333598,Hieracium umbellatum,Pflegehinweis,str,Rückschnitt vor der Samenreife um Selbstaussaat zu vermeiden,NULL
+333598,Hieracium umbellatum,Vermehrung generativ,str,"Normalkeimer, die Samen keimen meist leicht und kurzzeitig",NULL
+333598,Hieracium umbellatum,Vermehrung generativ,str,Aussaat im Frühling,NULL
+333598,Hieracium umbellatum,Allgemeine Verwendungsmöglichkeiten,str,Insektennährpflanze,NULL
+333598,Hieracium umbellatum,Blütenfüllung,enum,einfach,NULL
+21823,Ajuga reptans 'Stölzle',Deutscher Name,str,Garten-Günsel,NULL
+21823,Ajuga reptans 'Stölzle',Pflanzengruppe,str,Stauden,NULL
+21823,Ajuga reptans 'Stölzle',Herkunft,enum,"Züchtung, Auslese, Cultivar",NULL
+21823,Ajuga reptans 'Stölzle',Blattspreite,str,"einfach, ungetreilt",NULL
+21823,Ajuga reptans 'Stölzle',Blattspreite,str,dick,NULL
+21823,Ajuga reptans 'Stölzle',Blattform/-Umriss,str,zungen- bis spatelförmig,NULL
+21823,Ajuga reptans 'Stölzle',Blattform/-Umriss,str,abgerundet,NULL
+21823,Ajuga reptans 'Stölzle',Blattstellung,str,rosettig,NULL
+21823,Ajuga reptans 'Stölzle',Blattstellung,str,grundständig,NULL
+21823,Ajuga reptans 'Stölzle',Blütezeit von,enum,Mai,NULL
+21823,Ajuga reptans 'Stölzle',Blütezeit bis,enum,Juni,NULL
+21823,Ajuga reptans 'Stölzle',Blatt-Farbgruppe HAE,enum,braun,NULL
+21823,Ajuga reptans 'Stölzle',Blatt-Farbgruppe HAE,enum,rot,NULL
+21823,Ajuga reptans 'Stölzle',Blattfarbe HAE,enum,rotbraun,NULL
+21823,Ajuga reptans 'Stölzle',Blattfarbe CD,str,rotbraun,NULL
+21823,Ajuga reptans 'Stölzle',Blüten-Farbgruppe,enum,blau,NULL
+21823,Ajuga reptans 'Stölzle',Blütenfarbe,str,blau,NULL
+21823,Ajuga reptans 'Stölzle',Winterhärtezone,enum,Z5,-23°C bis -28°C
+21823,Ajuga reptans 'Stölzle',Blütenfarbe HAE,enum,blau,NULL
+21823,Ajuga reptans 'Stölzle',Wuchsform,str,"teppichartig, mattenartig",NULL
+21823,Ajuga reptans 'Stölzle',Bodenfeuchte,str,frisch,frisch
+21823,Ajuga reptans 'Stölzle',Bodenfeuchte,str,feucht,feucht
+21823,Ajuga reptans 'Stölzle',Blatt-Hoehe_v,size mm,10,NULL
+21823,Ajuga reptans 'Stölzle',Blatt-Hoehe_b,size mm,10,NULL
+21823,Ajuga reptans 'Stölzle',Blüten-Hoehe_v,size mm,15,NULL
+21823,Ajuga reptans 'Stölzle',Blüten_Hoehe_b,size mm,15,NULL
+21823,Ajuga reptans 'Stölzle',Wuchsverhalten,str,ausläufertreibend,NULL
+21823,Ajuga reptans 'Stölzle',Blattphase,str,wintergrün,NULL
+21823,Ajuga reptans 'Stölzle',Blattrand,str,ganzrandig,NULL
+21823,Ajuga reptans 'Stölzle',Blattrand,str,gekerbt,NULL
+21823,Ajuga reptans 'Stölzle',Blatteigenschaften,str,glänzend,NULL
+21823,Ajuga reptans 'Stölzle',Blatteigenschaften,str,kahl,NULL
+21823,Ajuga reptans 'Stölzle',Blatteigenschaften,str,runzelig,NULL
+21823,Ajuga reptans 'Stölzle',Blütenstängel,str,kurzstängelig,NULL
+21823,Ajuga reptans 'Stölzle',Blütenstängel,str,unverwzeigt,NULL
+21823,Ajuga reptans 'Stölzle',Blütenstängel,str,beblättert,NULL
+21823,Ajuga reptans 'Stölzle',Blütenstängel,str,straff aufrecht,NULL
+21823,Ajuga reptans 'Stölzle',Stängelblätter,str,gestielt (mehr oder weniger),NULL
+21823,Ajuga reptans 'Stölzle',Stängelblätter,str,gegenständig,NULL
+21823,Ajuga reptans 'Stölzle',Blütenstand,str,scheinährig,NULL
+21823,Ajuga reptans 'Stölzle',Blütenstand,str,etagen- bis quirlartig,NULL
+21823,Ajuga reptans 'Stölzle',Blütengröße innerhalb der Gruppe,str,Blüte klein,NULL
+21823,Ajuga reptans 'Stölzle',Blütenstellung,str,seitlich zeigend,NULL
+21823,Ajuga reptans 'Stölzle',"Fruchtart, Samen",str,Nüsschen,NULL
+21823,Ajuga reptans 'Stölzle',Lebensbereich,str,GR,Gehölzrand
+21823,Ajuga reptans 'Stölzle',Lebensbereich,str,Fr,Freifläche
+21823,Ajuga reptans 'Stölzle',Geselligkeitsstufe,enum,Stufe III (10-20 Pflanzen in größeren Gruppen),NULL
+21823,Ajuga reptans 'Stölzle',Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+21823,Ajuga reptans 'Stölzle',Pflanzabstand von,size cm,25,NULL
+21823,Ajuga reptans 'Stölzle',Pflanzabstand bis,size cm,25,NULL
+21823,Ajuga reptans 'Stölzle',Lichtansprüche,enum,sonnig,NULL
+21823,Ajuga reptans 'Stölzle',Lichtansprüche,enum,absonnig,NULL
+21823,Ajuga reptans 'Stölzle',"Lage, Exposition",str,anpassungsfähig,NULL
+21823,Ajuga reptans 'Stölzle',Bodenstruktur,str,durchlässig,NULL
+21823,Ajuga reptans 'Stölzle',Humusbedarf,str,normal,NULL
+21823,Ajuga reptans 'Stölzle',Humusbedarf,str,hoch,NULL
+21823,Ajuga reptans 'Stölzle',Bodenreaktion,str,"pH5,5 - 5,9","schwach, mäßig sauer (pH5,5 - 5,9)"
+21823,Ajuga reptans 'Stölzle',Bodenreaktion,str,"pH6,0 - 6,9","neutral (pH6,0 - 6,9)"
+21823,Ajuga reptans 'Stölzle',Nährstoffbedarf,str,"hoch, nährstoffreich",NULL
+21823,Ajuga reptans 'Stölzle',Bodenart,str,"lehmig, sandig",NULL
+21823,Ajuga reptans 'Stölzle',Bodenart,str,"humos, sandig humos",NULL
+21823,Ajuga reptans 'Stölzle',Sichtungswerte BdS,str,bisher ohne Bewertung,NULL
+21823,Ajuga reptans 'Stölzle',Pflegehinweis,str,"Ausbreitung durch Ausläufer, Rhizome oder wurzelnde Triebe, nach Bedarf, eingrenzen",NULL
+21823,Ajuga reptans 'Stölzle',Pflegehinweis,str,An optimalen Standorten kaum Pflege nötig. Siehe Zuordnung zu den Lebensbereichen.,NULL
+21823,Ajuga reptans 'Stölzle',Vermehrung vegetativ,str,Teilung im Frühling,NULL
+21823,Ajuga reptans 'Stölzle',Vermehrung vegetativ,str,Nebenrosetten im Frühling bis Sommer,NULL
+21823,Ajuga reptans 'Stölzle',Blattschmuck,str,ganzjährig wirkungsvoll,NULL
+21823,Ajuga reptans 'Stölzle',Blütenfüllung,enum,einfach,NULL
+139516,Centaurea jacea 'Caramia' - R -,Deutscher Name,str,Garten-Flockenblume,NULL
+139516,Centaurea jacea 'Caramia' - R -,Pflanzengruppe,str,Stauden,NULL
+139516,Centaurea jacea 'Caramia' - R -,Herkunft,enum,"Züchtung, Auslese, Cultivar",NULL
+139516,Centaurea jacea 'Caramia' - R -,Blattspreite,str,"einfach, ungetreilt",NULL
+139516,Centaurea jacea 'Caramia' - R -,Blattform/-Umriss,str,lanzettlich,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blattstellung,str,gestielt,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blattstellung,str,grundständig,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blütezeit von,enum,Juni,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blütezeit bis,enum,September,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blatt-Farbgruppe HAE,enum,grün,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blattfarbe HAE,enum,grün,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blattfarbe CD,str,grün,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blüten-Farbgruppe,enum,purpur,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blütenfarbe,str,leuchtend-purpur,NULL
+139516,Centaurea jacea 'Caramia' - R -,Winterhärtezone,enum,Z5,-23°C bis -28°C
+139516,Centaurea jacea 'Caramia' - R -,Blütenfarbe HAE,enum,leuchtend-purpur,NULL
+139516,Centaurea jacea 'Caramia' - R -,Wuchsform,str,kissenartig bis kissenbildend,NULL
+139516,Centaurea jacea 'Caramia' - R -,Wuchsform,str,bogig,NULL
+139516,Centaurea jacea 'Caramia' - R -,Bodenfeuchte,str,frisch,frisch
+139516,Centaurea jacea 'Caramia' - R -,Bodenfeuchte,str,trocken,trocken
+139516,Centaurea jacea 'Caramia' - R -,Blüten-Hoehe_v,size mm,60,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blüten_Hoehe_b,size mm,80,NULL
+139516,Centaurea jacea 'Caramia' - R -,Wuchsverhalten,str,"horstig, lockerhorstig, horstbildend",NULL
+139516,Centaurea jacea 'Caramia' - R -,Blattphase,str,sommergrün,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blattrand,str,ganzrandig,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blatteigenschaften,str,fiedernervig,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blatteigenschaften,str,matt,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blatteigenschaften,str,rauh,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blütenstängel,str,"aufrecht, locker bis straff aufrecht",NULL
+139516,Centaurea jacea 'Caramia' - R -,Blütenstängel,str,beblättert,NULL
+139516,Centaurea jacea 'Caramia' - R -,Stängelblätter,str,wechselständig,NULL
+139516,Centaurea jacea 'Caramia' - R -,Stängelblätter,str,sitzend,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blütenstand,str,körbchenartig,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blütenstand,str,einzeln,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blütengröße innerhalb der Gruppe,str,Blume groß,NULL
+139516,Centaurea jacea 'Caramia' - R -,Blütenstellung,str,aufwärts zeigend,NULL
+139516,Centaurea jacea 'Caramia' - R -,"Fruchtart, Samen",str,Samen mit Pappus,NULL
+139516,Centaurea jacea 'Caramia' - R -,Lebensbereich,str,Fr,Freifläche
+139516,Centaurea jacea 'Caramia' - R -,Lebensbereich,str,B,Beet
+139516,Centaurea jacea 'Caramia' - R -,Geselligkeitsstufe,enum,Stufe II (3-5 (10) Pflanzen in kleinen Trupps),NULL
+139516,Centaurea jacea 'Caramia' - R -,Geselligkeitsstufe,enum,Stufe I (1-3(5) Pflanzen möglichst einzeln oder inTuffs),NULL
+139516,Centaurea jacea 'Caramia' - R -,Pflanzabstand von,size cm,50,NULL
+139516,Centaurea jacea 'Caramia' - R -,Pflanzabstand bis,size cm,60,NULL
+139516,Centaurea jacea 'Caramia' - R -,Lichtansprüche,enum,sonnig,NULL
+139516,Centaurea jacea 'Caramia' - R -,"Lage, Exposition",str,anpassungsfähig,NULL
+139516,Centaurea jacea 'Caramia' - R -,Bodenstruktur,str,durchlässig,NULL
+139516,Centaurea jacea 'Caramia' - R -,Humusbedarf,str,normal,NULL
+139516,Centaurea jacea 'Caramia' - R -,Bodenreaktion,str,"pH5,5 - 5,9","schwach, mäßig sauer (pH5,5 - 5,9)"
+139516,Centaurea jacea 'Caramia' - R -,Bodenreaktion,str,"pH6,0 - 6,9","neutral (pH6,0 - 6,9)"
+139516,Centaurea jacea 'Caramia' - R -,Bodenreaktion,str,"pH7,0 - 7,5","schwach, mäßig kalkhaltig (pH7,0 - 7,5)"
+139516,Centaurea jacea 'Caramia' - R -,Nährstoffbedarf,str,"mittel, normal, ausgeglichen",NULL
+139516,Centaurea jacea 'Caramia' - R -,Bodenart,str,"lehmig, sandig",NULL
+139516,Centaurea jacea 'Caramia' - R -,Bodenart,str,"humos, sandig humos",NULL
+139516,Centaurea jacea 'Caramia' - R -,Sichtungswerte BdS,str,* (gut),NULL
+139516,Centaurea jacea 'Caramia' - R -,Pflegehinweis,str,An optimalen Standorten kaum Pflege nötig. Siehe Zuordnung zu den Lebensbereichen.,NULL
+139516,Centaurea jacea 'Caramia' - R -,Pflegehinweis,str,Rückschnitt abgeblühter Stängel bis zum grundständigen Blattschopf,NULL
+139516,Centaurea jacea 'Caramia' - R -,Vermehrung vegetativ,str,Teilung im Frühling,NULL
+139516,Centaurea jacea 'Caramia' - R -,Vermehrung vegetativ,str,Wurzelschnittlinge im Winter bis Frühling,NULL
+139516,Centaurea jacea 'Caramia' - R -,Allgemeine Verwendungsmöglichkeiten,str,"für Schnittzwecke, Floristik",NULL
+139516,Centaurea jacea 'Caramia' - R -,Blütenfüllung,enum,einfach,NULL
+215733,Epilobium angustifolium 'Album',Blattfarbe CD,str,grün,NULL
+215733,Epilobium angustifolium 'Album',Blütenfarbe,str,weiß,NULL

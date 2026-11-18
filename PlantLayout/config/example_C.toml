@@ -1,0 +1,23 @@
+[project]
+name = "plant-layout"
+cell_size_m = 0.2
+target_plants = 500
+
+[inputs]
+traits_csv = "data/raw/Plant_traits_list_C.csv"
+optimization_report = "data/raw/optimization_report_C.txt"
+mask_name = "rectangle"
+
+[spacing_fallbacks_cm]
+"Cichorium intybus var. sativum" = 50
+
+[randomness]
+seeds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+[optimization]
+initial_temperature = 10.0
+cooling_rate = 0.9995
+iterations = 20_000
+
+[outputs]
+results_dir = "results"

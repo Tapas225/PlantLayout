@@ -1,0 +1,307 @@
+PFLANZPLAN-REPORT
+========================================
+Datum: 01.04.2026 14:05
+Konfiguration: config/optimization_config_C.json
+Ziel-Individuenzahl: 500
+
+ZUSAMMENFASSUNG DER STRUKTUR:
+-----------------------------
+Gerüstbildner  :   8 Stück |  4 Arten |   8.0%
+Begleitart     :  30 Stück |  7 Arten |  30.0%
+Bodendecker    :  35 Stück |  5 Arten |  35.0%
+Zwiebeln & Knollen:   0 Stück |  0 Arten |   0.0%
+unbestimmbar   :  27 Stück |  1 Arten |  27.0%
+
+Artenzahl Pflanzen insgesamt: 17
+
+Pollenquellen  : 100 Stück (100.0%)
+
+GEFÖRDERTE ZIEL-BIENEN: 16/18
+
+Art | Anzahl Sichtungen | Verfügbare Pflanzen nach Filter | Ausgewählte Pflanzen in Planung | Stückzahl Pflanzen in Planung
+------------------------------------------------------------
+- Andrena agilissima             |    1 |   4 |   1 |   3
+- Andrena viridescens            |    1 |  10 |   3 |   6
+- Anthophora retusa              |    1 | 110 |   1 |   3
+- Eucera longicornis             |    1 |  46 |   3 |  20
+- Eucera nigrescens              |    1 |  31 |   3 |  20
+- Macropis europaea              |    1 |   9 |   1 |   3
+- Megachile apicalis             |    1 |  46 |   2 |   4
+- Megachile lapponica            |    1 |   4 |   1 |   3
+- Melitta tricincta              |    1 |   0 |   0 |   0
+- Osmia brevicornis              |    1 |   9 |   1 |   3
+- Osmia leaiana                  |    1 |  33 |   6 |  37
+- Osmia niveata                  |    1 |  37 |   4 |   8
+- Osmia pilicornis               |    1 |  30 |   1 |   3
+- Panurgus banksianus            |    1 |  14 |   5 |  58
+- Panurgus calcaratus            |    1 |  14 |   5 |  58
+- Panurgus dentipes              |    1 |  14 |   5 |  58
+- Pseudoanthidium nanum          |    1 |   5 |   2 |   4
+- Tetralonia alticincta          |    1 |   0 |   0 |   0
+
+BLÜHZEITEN:  
+
+Monat | Anzahl Taxa 
+--------------------
+    1 |   0
+    2 |   0
+    3 |   0
+    4 |   1
+    5 |   5
+    6 |  13
+    7 |  12
+    8 |  11
+    9 |   6
+   10 |   1
+   11 |   0
+   12 |   0
+
+
+DETAILLIERTE PFLANZLISTE:
+
+Botanischer Name                    | Typ             | Menge
+------------------------------------------------------------
+Ajuga reptans 'Stölzle'             | Bodendecker     | 3 Stk.
+ - Anthophora retusa                | nicht oligolektisch
+ - Osmia pilicornis                 | nicht oligolektisch
+ - Anthophora retusa                | flower_visit   
+ - Osmia pilicornis                 | flower_visit   
+Cardamine trifolia                  | Bodendecker     | 3 Stk.
+ - Andrena agilissima               | flower_visit   
+ - Osmia brevicornis                | flower_visit   
+Centaurea jacea                     | Gerüstbildner   | 2 Stk.
+ - Osmia leaiana                    | oligolektisch  
+ - Osmia niveata                    | oligolektisch  
+ - Pseudoanthidium nanum            | oligolektisch  
+ - Eucera longicornis               | flower_visit   
+ - Eucera nigrescens                | flower_visit   
+ - Megachile apicalis               | flower_visit   
+ - Osmia leaiana                    | flower_visit   
+ - Osmia niveata                    | flower_visit   
+Centaurea jacea 'Caramia' - R -     | Gerüstbildner   | 2 Stk.
+ - Osmia leaiana                    | oligolektisch  
+ - Osmia niveata                    | oligolektisch  
+ - Pseudoanthidium nanum            | oligolektisch  
+ - Eucera longicornis               | flower_visit   
+ - Eucera nigrescens                | flower_visit   
+ - Megachile apicalis               | flower_visit   
+ - Osmia leaiana                    | flower_visit   
+ - Osmia niveata                    | flower_visit   
+Cichorium intybus var. intybus      | Gerüstbildner   | 2 Stk.
+ - Osmia leaiana                    | oligolektisch  
+ - Panurgus banksianus              | oligolektisch  
+ - Panurgus calcaratus              | oligolektisch  
+ - Panurgus dentipes                | oligolektisch  
+ - Panurgus banksianus              | flower_visit   
+ - Panurgus calcaratus              | flower_visit   
+ - Panurgus dentipes                | flower_visit   
+Cichorium intybus var. sativum      | unbestimmbar    | 27 Stk.
+ - Osmia leaiana                    | oligolektisch  
+ - Panurgus banksianus              | oligolektisch  
+ - Panurgus calcaratus              | oligolektisch  
+ - Panurgus dentipes                | oligolektisch  
+ - Panurgus banksianus              | flower_visit   
+ - Panurgus calcaratus              | flower_visit   
+ - Panurgus dentipes                | flower_visit   
+Epilobium angustifolium 'Album'     | Begleitart      | 3 Stk.
+ - Megachile lapponica              | nicht oligolektisch
+ - Megachile lapponica              | flower_visit   
+Hieracium bornmuelleri              | Begleitart      | 2 Stk.
+ - Osmia leaiana                    | oligolektisch  
+ - Osmia niveata                    | oligolektisch  
+Hieracium pilosella                 | Bodendecker     | 25 Stk.
+ - Panurgus banksianus              | oligolektisch  
+ - Panurgus calcaratus              | oligolektisch  
+ - Panurgus banksianus              | flower_visit   
+ - Panurgus calcaratus              | flower_visit   
+ - Panurgus dentipes                | flower_visit   
+Hieracium pilosella 'Niveum'        | Bodendecker     | 2 Stk.
+ - Panurgus banksianus              | oligolektisch  
+ - Panurgus calcaratus              | oligolektisch  
+ - Panurgus banksianus              | flower_visit   
+ - Panurgus calcaratus              | flower_visit   
+ - Panurgus dentipes                | flower_visit   
+Hieracium x rubrum                  | Bodendecker     | 2 Stk.
+ - Osmia leaiana                    | oligolektisch  
+ - Osmia niveata                    | oligolektisch  
+Hieracium umbellatum                | Gerüstbildner   | 2 Stk.
+ - Panurgus banksianus              | oligolektisch  
+ - Panurgus calcaratus              | oligolektisch  
+ - Panurgus dentipes                | oligolektisch  
+ - Panurgus banksianus              | flower_visit   
+ - Panurgus calcaratus              | flower_visit   
+ - Panurgus dentipes                | flower_visit   
+Lathyrus pratensis                  | Begleitart      | 16 Stk.
+ - Eucera longicornis               | oligolektisch  
+ - Eucera nigrescens                | oligolektisch  
+ - Eucera longicornis               | flower_visit   
+ - Eucera nigrescens                | flower_visit   
+Lysimachia vulgaris                 | Begleitart      | 3 Stk.
+ - Macropis europaea                | streng oligolektisch
+ - Macropis europaea                | flower_visit   
+Veronica chamaedrys                 | Begleitart      | 2 Stk.
+ - Andrena viridescens              | streng oligolektisch
+ - Andrena viridescens              | flower_visit   
+Veronica teucrium 'Knallblau'       | Begleitart      | 2 Stk.
+ - Andrena viridescens              | streng oligolektisch
+Veronica teucrium 'Shirley Blue'    | Begleitart      | 2 Stk.
+ - Andrena viridescens              | streng oligolektisch
+
+
+
+DEBUG: Konfiguration
+{
+    "optimization_params": {
+        "area_sqm": 50.0,
+        "mix_optimizer": {
+            "plant_density": 10,
+            "max_taxa": 35,
+            "max_taxa_per_species": 2,
+            "taxa_Gerüstbildner_min": 4,
+            "taxa_Gerüstbildner_max": 8,
+            "taxa_Gerüstbildner_penalty": 10000.0,
+            "ratio_Gerüstbildner_min": 0.05,
+            "ratio_Gerüstbildner_max": 0.08,
+            "ratio_Gerüstbildner_penalty": 1e+06,
+            "taxa_Begleitpflanzen_min": 7,
+            "taxa_Begleitpflanzen_max": 9,
+            "taxa_Begleitpflanzen_penalty": 10000.0,
+            "ratio_Begleitpflanzen_min": 0.3,
+            "ratio_Begleitpflanzen_max": 0.6,
+            "ratio_Begleitpflanzen_penalty": 1e+06,
+            "taxa_Bodendecker_min": 5,
+            "taxa_Bodendecker_max": null,
+            "taxa_Bodendecker_penalty": 10000.0,
+            "ratio_Bodendecker_min": 0.35,
+            "ratio_Bodendecker_max": null,
+            "ratio_Bodendecker_penalty": 1e+06,
+            "taxa_Zwiebeln_min": 3,
+            "taxa_Zwiebeln_max": null,
+            "taxa_Zwiebeln_penalty": 10000.0,
+            "min_plants_per_taxon": 2,
+            "max_plants_per_taxon": 50,
+            "min_plants_per_bee_specimen": 3,
+            "max_bee_specimen_sightings": 5,
+            "bee_specimen_sightings_weight": 1.0,
+            "bee_specialization_weight": 2.0,
+            "bee_spec_score_streng_oligolektisch": 10.0,
+            "bee_spec_score_oligolektisch": 5.0,
+            "bee_spec_score_polylektisch": 2.0,
+            "bee_spec_score_nicht_oligolektisch": 1.0,
+            "bee_spec_score_flower_visit": 1.0,
+            "bee_spec_score_else": 0.0,
+            "bee_support_penalty": 1000.0,
+            "diversity_penalty": 1000.0,
+            "Total_plants_penalty_low": 1000.0,
+            "Total_plants_penalty_high": 10000.0,
+            "bee_red_list_weight": 2.0,
+            "Rote Liste Scores": {
+                "Vorwarnliste": 1,
+                "Extrem selten": 2,
+                "Gefährdung unbekannten Ausmaßes": 3,
+                "Gefährdet": 4,
+                "Stark gefährdet": 5,
+                "Vom Aussterben bedroht": 6,
+                "Ausgestorben oder verschollen": 7
+            }
+        },
+        "spatial_optimizer": {
+            "iterations": 20000,
+            "temperature": 10.0,
+            "cooling_rate": 0.9995,
+            "config": {
+                "height_staggering_weight": 2.0,
+                "bloom_clustering_weight": 1.5,
+                "category_spacing_weight": 10.0,
+                "min_bloom_spacing_cm": 50,
+                "min_scaffold_spacing_cm": 100,
+                "move_shift_magnitude": 0.5
+            }
+        }
+    },
+    "site_conditions": {
+        "Winterhärtezone": [
+            "Z1 (-45 und niedriger)",
+            "Z2 (-40 bis -43)",
+            "Z3 (-35 bis -39)",
+            "Z4 (-29 bis -34)",
+            "Z5 (-23 bis -28)",
+            "Z6 (-18 bis -22)",
+            "Z7 (-12 bis -17)", 
+            "Z8 (-6 bis -11)"
+        ],
+        "Lebensbereich": [
+            "Fr (Freifläche)", 
+            "B (Beet)"
+        ],
+        "Lichtansprüche": ["sonnig"],
+        "Bodenfeuchte": [
+            "trocken",
+            "frisch"
+        ],
+        "Bodenreaktion": [
+            "schwach, mäßig sauer (pH5,5 - 5,9)",
+            "neutral (pH6,0 - 6,9)"
+        ],
+        "Nährstoffbedarf": [
+            "hoch, nährstoffreich",
+            "mittel, normal, ausgeglichen",
+            "gering, nährstoffarm"
+        ]
+    },
+    "user_preferences": {
+        "exclude_non_native": false,
+        "exclude_cultivated": false,
+        "exclude_filled_flowers": true,
+        "exclude_poisonous": false
+    },
+    "target_bees_file": "config/Taxa_Duisburg_IGA_C.csv"
+}
+
+
+DEBUG: More information
+=============================
+
+
+Optimization completed with status: Optimal
+Optimized Ecological Benefit: 16239.00
+Optimized Color Benefit: 0.00
+Optimized Functional Penalty: 30000.00
+Optimized Total Penalty: 400000.00
+Optimized Diversity Penalty: -313514285.71
+
+Number of selected taxa: 17.0
+Number of total plants at area: 100.0
+Functional types: Min | Max | Actual | Score Contribution
+--------------------------------------------------------------------------------
+Gerüstbildner   : 4 | 8 | 4.0 | -0.00
+Begleitpflanzen : 7 | 9 | 7.0 | -0.00
+Bodendecker     : 5 | None | 5.0 | -0.00
+Zwiebeln/Knollen: 3 | None | 0 | -30000.00
+
+Functional types Ratio: Min | Max | Actual | Score Contribution
+--------------------------------------------------------------------------------
+Gerüstbildner  : 0.05 | 0.08 | 8.00% | 0.00
+Begleitpflanzen: 0.3 | 0.6 | 30.00% | 0.00
+Bodendecker    : 0.35 | None | 35.00% | 0.00
+
+Bee Coverage: Priority | Required Support | Actual Support | Score Contribution
+--------------------------------------------------------------------------------
+Andrena agilissima       |  11 |   3 |   3 |      33
+Andrena viridescens      |  11 |   3 |   6 |     682
+Anthophora retusa        |   5 |   3 |   3 |      30
+Eucera longicornis       |  11 |   3 |  20 |    1100
+Eucera nigrescens        |  11 |   3 |  20 |    1100
+Macropis europaea        |  11 |   3 |   3 |     363
+Megachile apicalis       |   5 |   3 |   4 |      20
+Megachile lapponica      |  11 |   3 |   3 |      66
+Melitta tricincta        |  11 |  -1 |   0 |       0
+Osmia brevicornis        |  11 |   3 |   3 |      33
+Osmia leaiana            |  11 |   3 |  37 |    2079
+Osmia niveata            |  11 |   3 |   8 |     484
+Osmia pilicornis         |   5 |   3 |   3 |      30
+Panurgus banksianus      |  11 |   3 |  58 |    3828
+Panurgus calcaratus      |  11 |   3 |  58 |    3828
+Panurgus dentipes        |  11 |   3 |  58 |    2343
+Pseudoanthidium nanum    |  11 |   3 |   4 |     220
+Tetralonia alticincta    |  11 |  -1 |   0 |       0
