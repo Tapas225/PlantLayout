@@ -1,0 +1,558 @@
+---
+HANDOFF_DOCUMENT
+---
+
+**[PART 1 OF 2: sections 1–3]**
+
+## 1. PROJECT / TOPIC SUMMARY
+
+- This conversation is about a university research project, "Rule-Based Optimization of Perennial Planting Plans by Greedy Insertion and Simulated Annealing".
+  - Tapas Talati is the student. His supervisor is Prof. Dr.-Ing. Marco Seeland, the chair is Prof. Dr.-Ing. Patrick Mäder, and the department is Data-intensive Systems and Visualization. The semester is winter 2026/2027, and the work is a Research Project.
+  - Marco supplies plant lists (taxa and quantities from an upstream optimizer that selects plants for wild-bee support). The student must place the plants spatially on gridded areas of different geometries.
+  - The method is to research planting-design rules that can be formally modeled, build a constructive greedy insertion, and then improve the layout with Simulated Annealing (SA).
+  - Files provided: `Plant_traits_list_C.csv` (long format, 17 taxa), `20260401_140521_Report_optimization_config_C.txt` (upstream report and config), and `smime.p7s` (an email signature, irrelevant).
+  - A LaTeX proposal template is also provided.
+- **End goal:** submit the research proposal (the final text is v4, below). Then do the development phase, experiments and final report by Feb 15, 2026/27 (the template deadlines are proposal Nov 15 and final report Feb 15). Then implement a Python tool that converts a plant list and a masked area into a feasible coordinate plan and evaluate greedy vs. greedy + SA.
+- **Submission status:** the proposal is dated Nov 14, 2026. Whether it was uploaded is not stated.
+
+## 2. USER PROFILE
+
+- **Role and level:** a student, new to planting design and to writing proposals. His English has many typos, so he needs short and simple explanations. He is working with Python/LaTeX tools proposed by Claude (NumPy, SciPy, pandas, matplotlib, pytest).
+- **Preferences (stated):**
+  - A natural flow of text, interesting.
+  - Motivation written with the OCAR structure (Opening, Challenge, Action, Resolution).
+  - References at the end of the sentence, after the period, e.g. "...Tapas.[1]".
+  - No bullet lists with bold lead-ins in the proposal ("revive bullts if bold text is done").
+  - Research question, related work and concept tree in the Task Description.
+  - A scientific approach with a meaningful, testable hypothesis.
+  - He likes honest reviews of flaws, and asks for emails to Marco to be short and simple.
+  - He uses the supplied LaTeX template (scrreprt, `ieeetr` bibliography, `literature.bib`).
+- **Constraints from his professor:** cite only sources actually read and understood. AI is acceptable for related-work research and language correction, but its output must always be reviewed. Citing sources one does not know is treated as fraud.
+- **Tools:** Claude's `message_compose_v1` email card was used for emails.
+- **Other:** in review rounds he pasted critique texts from other AI reviewers. Claude should evaluate them honestly and push back where wrong.
+
+## 3. KEY FACTS & DECISIONS
+
+**Data facts**
+- Report: area 50 m², target 500 plants (config density 10/m²), actual list 100 plants, 17 taxa, 16 of 18 target bee taxa supported.
+- Functional types in the report:
+
+  | Type | Plants | Taxa |
+  |---|---|---|
+  | Gerüstbildner | 8 | 4 |
+  | Begleitart | 30 | 7 |
+  | Bodendecker | 35 | 5 |
+  | Zwiebeln & Knollen | 0 | 0 |
+  | unbestimmbar (*Cichorium intybus* var. *sativum*) | 27 | 1 |
+
+  The config requires at least 3 bulb taxa, so the list violates its own minimum.
+- Plants per taxon (100 in total):
+
+  | Taxon | Plants |
+  |---|---|
+  | *Ajuga reptans* 'Stölzle' | 3 |
+  | *Cardamine trifolia* | 3 |
+  | *Centaurea jacea* | 2 |
+  | *Centaurea jacea* 'Caramia' | 2 |
+  | *Cichorium intybus* var. *intybus* | 2 |
+  | *Cichorium intybus* var. *sativum* | 27 |
+  | *Epilobium angustifolium* 'Album' | 3 |
+  | *Hieracium bornmuelleri* | 2 |
+  | *H. pilosella* | 25 |
+  | *H. pilosella* 'Niveum' | 2 |
+  | *H. x rubrum* | 2 |
+  | *H. umbellatum* | 2 |
+  | *Lathyrus pratensis* | 16 |
+  | *Lysimachia vulgaris* | 3 |
+  | *Veronica chamaedrys* | 2 |
+  | *V. teucrium* 'Knallblau' | 2 |
+  | *V. teucrium* 'Shirley Blue' | 2 |
+- CSV columns: `id`, `scientific_name`, `name`, `allowed_type`, `value_str`, `description`.
+- Spacing: `Pflanzabstand von/bis` in cm. It is missing for var. *sativum* (27 plants) and *Epilobium* (3 plants), so 30 of the 100 plants have no spacing.
+- Examples of spacing (von–bis): *Lathyrus* 80–120, *Lysimachia* 30–40, *Centaurea jacea* 30–40, 'Caramia' 50–60, var. *intybus* 50–60. Most *Hieracium*/*Cardamine*/*V. chamaedrys* are 20–30.
+- Heights: flower height `Blüten-Hoehe_v/_b`, leaf height `Blatt-Hoehe_v/_b` (only about 4 of 17 taxa). They are labelled "size mm" but the values are clearly centimetres (e.g. *Lathyrus* 40–120), which should be treated as cm, documented, and confirmed with Marco.
+- Sociability (`Geselligkeitsstufe`): Stufe I, II (3–5 (10) plants), III (10–20 plants). Duplicate entries per taxon may exist and must be preserved.
+
+**Marco's decisions (from his replies)**
+- Taxa are fixed. Counts may change, with ratios preserved.
+- The geometry format is up to the student. He suggested numerical arrays with 20 cm × 20 cm cells and masks. One area contains a path, another a larger hole.
+- The distance to the area edges can be half the Pflanzabstand.
+- Comparing greedy vs. greedy + SA is enough.
+- 100 plants are too few and 500 will not fit. The target remains 500, and the area is to be filled with as many plants as possible while keeping relative frequencies as constant as possible.
+- Title: "Rule-Based Optimization of Perennial Planting Plans by Greedy Insertion and Simulated Annealing".
+- References: cite only sources read. AI use is acceptable for related-work research and language, with review of the output.
+
+**Modeling decisions (Claude's, accepted by the user; not yet confirmed by Marco unless stated)**
+- Three test areas: a plain rectangle (reference), a rectangle with a path, and a rectangle with a large hole. The recommended convention is the same 50 m² outer box, so the path and hole areas have fewer plantable cells (to be written in `DECISIONS.md`).
+- Plant model: disc with r = d_i/2. Hard constraints: the centre is on a plantable cell, at least d_i/2 from the boundary, and D_ij ≥ (d_i+d_j)/2. The max(d_i, d_j) rule is tested as an alternative. d_i is the lower Pflanzabstand value.
+- Positions are cell centres with Euclidean distances; a finer grid (10 cm) is tested in the sensitivity analysis.
+- Missing spacing gets a documented fallback from the closest related taxon (e.g. var. *intybus* 50–60 cm for var. *sativum*), flagged, and its share of plants is reported.
+- Preliminary packing screen: A_discs = Σ π(d_i/2)². Result with lower spacing: about 17 m² for the 100 plants and about 82 m² for 500 plants, against the 50 m² bed. Using the upper spacing: about 31 m² and about 155 m². Assumptions: sativum 50–60 cm, *Epilobium* 40–60 cm. About half of the space need comes from the 16 *Lathyrus* plants.
+- Quantities: the largest-remainder method gives the counts for any N. A capacity search takes the largest N ≤ 500 that greedy places in all seeds (bisection plus single steps). N is then fixed so greedy and greedy + SA place identical plants. Caveat: the greedy feasibility may be non-monotone in N, so verify the final N and its neighbours directly, with fixed capacity seeds and logged success/failure counts.
+- Greedy: most-constrained-first (fewest feasible cells, largest spacing, most restrictive grouping; functional category only a secondary criterion), random tie-breaking by seed.
+- SA: moves shift, swap (of different taxa; spacing rechecked) and group move. Acceptance min(1, exp(−ΔE/T)), geometric cooling. Starting values from the upstream config: T0 = 10, cooling 0.9995, 20,000 iterations. Best-so-far retained, incremental ΔE.
+- Energy E(X) = Σ w_k E_k(X) with E_k in [0,1] and equal baseline weights. Soft rules:
+  - Grouping (clusters within 1.5·d_i vs. the sociability interval).
+  - Height structure (low coefficient of variation within 1 m is penalized).
+  - Local flowering coverage (blocks with about ten plants on average; share of season months without a bloom).
+  - Structural plants (penalty max(0, 1−R), R = mean nearest-neighbour distance divided by the random-pattern expectation).
+  - Global seasonal flowering is only reported (set by the taxa). Colour distribution is optional.
+- Hypotheses: H1, SA gives a positive median relative improvement in every area (larger on the path and hole areas). H2, at least 75% of runs per area improve. H3, most-constrained-first insertion beats random order. Note that H1 is partly tautological because the best-so-far plan is kept, so the effect size is what matters.
+- Research questions: RQ1 (formalizable rules), RQ2 (capacity and filling), RQ3 (SA improvement and consistency).
+- Experiments: E1 insertion order; E2 greedy vs. greedy + SA paired by seed; E3 sensitivity (pair rule, weights, grid resolution, spacing fallbacks). Extra: a random-restart greedy baseline with an equal budget of energy evaluations. There are 20 seeds per area (and per list if more lists arrive).
+- Statistics: paired one-sided Wilcoxon signed-rank test per area with Holm correction; median and IQR; relative improvement I = (E_greedy − E_SA)/E_greedy.
+- Visual review: maps coloured by bloom month and scaled by height.
+- Reference decision, and why: only Kirkpatrick 1983, Merrell et al. 2011 and Yu et al. 2011 are cited (core method and related work). Garbuzov 2014, Merrell 2010 and Clark & Evans 1954 are kept uncited in the `.bib`. The four books, Metropolis, Bridson and Deussen were removed. The reason is Marco's rule that only read sources may be cited. All claims were rebased on the data (e.g. strictly oligolectic bees *Macropis europaea* and *Andrena viridescens* from the report).
+- Development plan reviewed by another AI and partly adopted: steps 0–7 are kept. Additions:
+  - `notes/` and `DECISIONS.md`.
+  - Pad the mask with a one-cell `False` border before the Euclidean distance transform. The boundary distance is about half a cell less than the distance to the nearest masked centre.
+  - Verify the incremental energy against the full energy formally.
+  - Log all metrics.
+  - Preserve duplicate sociability intervals.
+  - The extensions are ranked: per-term energy reporting and layout-stability analysis are cheap and worthwhile. The geometry benchmark comes for free from E1 and E2. Skip the dashboard and natural-language explanations. Pareto optimization is future work.
+  - Do not claim horticulturally optimal plans: only improvement under the defined rules.
+
+**[END OF PART 1]**
+
+---
+
+**[PART 2 OF 2: sections 4–7]**
+
+## 4. WORK COMPLETED
+
+One line per item (prose):
+- Roadmap for the research project: steps, rule research, formal model, algorithm, evaluation.
+- Explanation of "formally modeled design rules", greedy insertion and SA in simple words.
+- Question lists for Marco and a short email.
+- Reviewed an external critique of the proposal, with a verdict per point (some severities overstated).
+- Feasibility calculation from the data (script below).
+- Proposals v1 (`proposal.tex`), v2 and v3, then the final v4.
+- A review of v3/v4 PDFs and the list of fixes.
+- Three emails to Marco: (a) short, with the 100-vs-500 question, (b) a fuller email with four questions, (c) a reply saying the proposal was changed and the user will read sources before citing.
+- A reference triage, and a 7-step development plan, with review of the other AI's improvements.
+- Findings: the unit mislabel in heights, and the monotonicity caveat of the capacity search.
+
+**Feasibility script (code, as used)**
+
+```python
+import math
+# (count, von, bis) from report + trait table; None = missing in CSV
+t={'Ajuga':(3,25,25),'Cardamine':(3,20,30),'Cj':(2,30,40),'Cj Caramia':(2,50,60),'Ci intybus':(2,50,60),
+'Ci sativum':(27,None,None),'Epilobium':(3,None,None),'H bornm':(2,20,30),'H pilosella':(25,20,30),'H Niveum':(2,20,30),
+'H rubrum':(2,20,30),'H umbellatum':(2,20,30),'Lathyrus':(16,80,120),'Lysimachia':(3,30,40),'V chamaedrys':(2,20,30),
+'V Knallblau':(2,30,30),'V Shirley':(2,30,30)}
+# fill missing: sativum like intybus 50-60; Epilobium unknown -> test 40 and 60
+for eps in (40,60):
+  for label,idx in (('von',1),('bis',2)):
+    A=0
+    for k,(n,a,b) in t.items():
+        d=[a,b][idx-1]
+        if d is None: d=(50 if idx==1 else 60) if k=='Ci sativum' else eps
+        A+=n*math.pi*(d/2)**2/1e4  # m2
+    print(f'Epilobium={eps}cm d={label}: disc area for 100 plants = {A:.1f} m2 ; scaled to 500 = {5*A:.1f} m2')
+```
+
+**Final proposal source, `proposal_v4.tex` (matches the last PDF the user shared)**
+
+```latex
+\documentclass[11pt,a4paper,titlepage=false]{scrreprt}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{breakurl}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{enumitem}
+\usepackage[
+  left=2.5cm,
+  right=2.5cm,
+  top=3cm,
+  bottom=3cm,
+]{geometry}
+\usepackage{listings}
+
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+\renewcommand{\theequation}{\arabic{equation}}
+
+\hypersetup{
+    pdfauthor={Tapas Talati},
+    pdftitle={Rule-Based Optimization of Perennial Planting Plans},
+    pdfsubject={RCSE Research Project Proposal, winter semester 2026/2027},
+    pdfkeywords={planting design; spatial optimization; simulated annealing; greedy insertion; wild bee habitat}
+}
+
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+
+\begin{document}
+\selectlanguage{english}
+
+\title{Rule-Based Optimization of Perennial Planting Plans \\
+       by Greedy Insertion and Simulated Annealing}
+\author{Tapas Talati}
+\date{\today}
+\maketitle
+
+\vspace{1cm}
+
+\begin{tabular}{r l}
+Type of work: & Research Project            \\
+Student:      & Tapas Talati                \\
+Supervisor:   & Prof.\ Dr.-Ing.\ Marco Seeland \\
+Chair:        & Prof.\ Dr.-Ing.\ Patrick Mäder \\
+Department:   & Data-intensive Systems and Visualization \\
+Semester:     & Winter semester 2026/2027   \\
+\end{tabular}
+
+\vspace{3mm}
+
+\begin{tabular}{l p{0.75\textwidth}}
+\textbf{Keywords:} & planting design; spatial optimization; simulated annealing; greedy insertion; wild bee habitat \\
+\end{tabular}
+
+\vspace{6mm}
+
+\section*{Motivation}
+
+A well-designed perennial planting may appear natural and effortless, but it is the result of many deliberate decisions: which species grow next to one another, how many individuals are planted together, and how the planting changes through the flowering season. These decisions shape not only the look of a planting but also its ecological value, because the choice of plants determines which flower-visiting insects find food. In the example data, several target bees are specialized on a few plant taxa, for instance \textit{Macropis europaea} and \textit{Andrena viridescens}, which the upstream report classifies as strictly oligolectic, so suitable flowering plants matter especially in urban green spaces. In the planning pipeline provided for this project, an upstream optimizer already selects perennials and their quantities for a given site and a set of target bee taxa. The example list contains 17 taxa that together support 16 of the 18 target bee taxa.
+
+A list of taxa and quantities, however, is not yet a planting plan. The same list can become a coherent and useful planting, or an arrangement in which tall species dominate smaller plants, structural plants gather in one corner and flowering is unevenly distributed. Designers work with functional roles such as structural plants, companions and ground cover, and with sociability levels that tell whether a species belongs in groups or stands alone; both are part of the trait data used here. These principles are mostly qualitative, they can conflict with one another, and they must be applied to areas with paths, holes and irregular outlines. Space is also a real constraint: with the recommended planting distances, the 100 plants of the example list need roughly 17\,m$^2$ of a 50\,m$^2$ bed, while the target of 500 plants would need an estimated 82\,m$^2$, far more than the bed offers. The target therefore stays at 500 plants, but the area is to be filled with as many plants as possible while keeping the relative frequencies of the taxa as constant as possible.
+
+This project translates selected design principles into formal rules and uses them to arrange a fixed plant list on a gridded area. The area is a 20\,cm grid with masks for paths and holes, hard constraints keep every plan valid, and weighted soft rules express design preferences. A two-stage algorithm then builds a plan by greedy insertion and improves it by Simulated Annealing.\cite{kirkpatrick} Turning design guidelines into an energy function and minimizing it has worked for furniture layouts,\cite{merrell2011,yu2011} but perennial planting adds its own requirements: the species are predetermined, plant traits shape spatial relationships, and the result must remain horticulturally plausible.
+
+The expected outcome is a reproducible tool that converts a plant list and a masked area into a feasible coordinate plan with as many plants as the area can hold, together with a documented catalogue of the design rules that could be formalized with the available traits. The evaluation shows how much Simulated Annealing improves on greedy insertion alone and whether this holds across area geometries.
+
+\section*{Task Description}
+
+The task is to place plants, not to select them. The taxa come from the upstream optimizer and stay fixed. The target is 500 plants per area. Since this many plants do not fit at the recommended spacing, the area is filled with as many plants as possible while the relative frequencies of the taxa are kept as constant as possible. Areas are numerical arrays with a cell size of 20\,cm $\times$ 20\,cm, and masks turn them into arbitrary geometries. Three test areas are used: a plain rectangle as reference, an area crossed by a path, and an area with a large hole. The program takes plant lists and area masks as separate inputs, so that every supplied list can be run on every area. Development starts with the example list C.
+
+\paragraph{Research question.}
+How can design rules for mixed perennial plantings be formalized so that greedy insertion followed by Simulated Annealing produces feasible plans that satisfy hard spatial constraints and score better on defined design rules than greedy insertion alone?
+
+\begin{enumerate}[label=RQ\arabic*,leftmargin=*,itemsep=0.2em]
+  \item Which design rules can be formalized with the available trait data, and should each be a hard constraint or a weighted rule?
+  \item How many plants can an area hold at the chosen planting distances, and how can it be filled with as many plants as possible, up to the target of 500, while keeping the relative frequencies of the taxa as constant as possible?
+  \item How much does Simulated Annealing improve on greedy insertion, and how consistent is this across random seeds and area geometries?
+\end{enumerate}
+
+\paragraph{Hypotheses.}
+The hypotheses follow from the two-stage design and can be rejected by the experiments.
+
+\begin{enumerate}[label=H\arabic*,leftmargin=*,itemsep=0.2em]
+  \item Simulated Annealing reaches a lower best-so-far energy than its own greedy starting plan, with a positive median relative improvement in every area. The gain is expected to be larger on the areas with path and hole, where narrow regions make early placements more restrictive.
+  \item The gain is consistent: in at least 75\,\% of the runs of an area, the final energy is lower than that of the greedy start.
+  \item Inserting plants in order of constraint (fewest feasible cells and largest spacing first) gives a lower greedy energy and fewer failed placements than a random order.
+\end{enumerate}
+
+\paragraph{Related work.}
+Planting design knowledge is documented mostly in qualitative form in the horticultural literature, which the literature review in the first project phase will survey for rules that can be formalized. In interior design, layout methods encode design guidelines as energy terms and optimize them, for example for furniture arrangements.\cite{merrell2011,yu2011} The algorithmic basis of this project is Simulated Annealing.\cite{kirkpatrick} The literature review will be extended with journal articles on plant neighborhood effects, planting density, pollinator resources and existing computational planting methods, and every source cited in the final report will have been read.
+
+\paragraph{Concept tree.}
+Figure~\ref{fig:tree} shows how the research question breaks down into the parts of the project.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  box/.style={draw, rounded corners=2pt, align=left,
+              font=\footnotesize, inner sep=4pt},
+  root/.style={box, fill=gray!20, text width=2.2cm, align=center},
+  l1/.style={box, fill=blue!10, text width=2.4cm},
+  leaf/.style={box, text width=6.2cm},
+  edge/.style={-{Stealth[length=2mm]}, thick, gray!70}
+]
+  \node[root] (r) at (0,0) {Planting plan for a fixed taxa list};
+
+  \node[l1] (a) at (3.6,4.0)  {Input and data};
+  \node[l1] (b) at (3.6,2.0)  {Quantities and filling (RQ2)};
+  \node[l1] (c) at (3.6,0)    {Rule model (RQ1)};
+  \node[l1] (d) at (3.6,-2.0) {Algorithm};
+  \node[l1] (e) at (3.6,-4.0) {Evaluation (RQ3)};
+
+  \node[leaf] (a1) at (9.3,4.0)
+    {Plant lists with traits; 20\,cm grid with masks (plain, path, hole)};
+  \node[leaf] (b1) at (9.3,2.0)
+    {Target 500; fill the area as far as possible with constant proportions; packing check};
+  \node[leaf] (c1) at (9.3,0)
+    {Hard: valid area, spacing, clearance. Soft: grouping, height, local flowering, structural plants};
+  \node[leaf] (d1) at (9.3,-2.0)
+    {Most-constrained-first greedy; Simulated Annealing with shift, swap and group moves};
+  \node[leaf] (e1) at (9.3,-4.0)
+    {Greedy vs.\ greedy + SA, 20 seeds per area; paired tests; sensitivity; visual review};
+
+  \foreach \n in {a,b,c,d,e}{\draw[edge] (r.east) -- (\n.west);}
+  \foreach \n in {a,b,c,d,e}{\draw[edge] (\n.east) -- (\n 1.west);}
+\end{tikzpicture}
+\caption{Concept tree of the project.}
+\label{fig:tree}
+\end{figure}
+
+\paragraph{Working assumptions.}
+Some modeling decisions are not fixed by the data or the task. Table~\ref{tab:assumptions} gives the choice for the first implementation and the alternative that is tested, so that open points become sensitivity experiments. They will be discussed with the supervisor.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{|p{2.6cm}|p{5.6cm}|p{5.6cm}|}
+\hline
+\textbf{Decision} & \textbf{Working choice} & \textbf{Alternative that is tested} \\
+\hline
+Number of plants & Target 500; largest $N\le 500$ that greedy places in all seeds, counts by largest remainder & Quantities of the supplied list (100 plants) \\
+\hline
+Spacing $d_i$ & Lower value of Pflanzabstand; pair rule $D_{ij}\ge (d_i+d_j)/2$; edge clearance $d_i/2$ & Pair rule $\max(d_i,d_j)$; upper value; spacing as soft preference \\
+\hline
+Missing spacing & Fallback from the closest related taxon & Exclusion of the taxon \\
+\hline
+Positions & Cell centres of the 20\,cm grid, Euclidean distances & Finer grid (10\,cm) \\
+\hline
+Plant lists & Any list and mask; list C for development & All lists on all three areas \\
+\hline
+\end{tabular}
+\caption{Working assumptions and the alternatives examined.}
+\label{tab:assumptions}
+\end{table}
+
+\section*{Scientific Approach}
+
+\paragraph{Sources and data.}
+The starting material is example list C, a long-format trait table for 17 taxa (height, flowering period, planting distance, sociability level, growth habit, habitat), together with the report and configuration of the upstream optimizer, which give the quantities, the target and first parameter values. Candidate design rules are collected in the literature review. The data have gaps: planting distance is missing for \textit{Cichorium intybus} var.\ \textit{sativum} (27 plants) and \textit{Epilobium angustifolium} (3 plants), together 30 of the 100 plants, leaf height is missing for most taxa, and the report lists no bulbs although the configuration asks for at least three. A soft rule simply skips taxa without its required trait. Spacing, however, is a hard constraint and needs a value for every plant, so a documented fallback from the closest related taxon is used, its share of plants is reported, and it is part of the sensitivity analysis.
+
+\paragraph{Quantities and filling (RQ2).}
+The target is $N_{\mathrm{target}}=500$ plants per area, and the area is to be filled with as many plants as possible while the relative frequencies of the taxa stay as close as possible to those of the supplied list. For any total $N$, the largest-remainder method gives the integer counts whose proportions deviate least from the supplied ones. A quick screen compares the plantable area with the space the plants need if each occupies a disc of radius $d_i/2$,
+\begin{equation}
+  A_{\mathrm{discs}} = \sum_i \pi \left(\frac{d_i}{2}\right)^2 .
+\end{equation}
+This is only a necessary indication, because irregular geometries and mixed sizes can make a placement impossible even when the discs would fit. The definitive test is the placement itself. A capacity search takes the largest $N\le 500$ for which greedy insertion places all plants in all seeds, found by bisection followed by single steps. This $N$ is then kept fixed, so that greedy insertion and Simulated Annealing place identical plants. For list C the screen gives about 17\,m$^2$ for the 100 listed plants and about 82\,m$^2$ for 500 plants at the minimum spacing, so the capacity search is expected to return a smaller $N$. The 16 \textit{Lathyrus pratensis} plants with a spacing of 80\,cm or more contribute most. Whether the recommended distances are strict minima in mixed plantings, which are usually planted denser, remains a question for the supervisor.
+
+\paragraph{Rule model (RQ1).}
+Hard constraints make a plan valid. A plant centre lies on a plantable cell and at least $d_i/2$ from the boundary of the plantable region, including the edges of paths and holes, computed with a Euclidean distance transform on the mask. Two plants $i$ and $j$ must satisfy
+\begin{equation}
+  D_{ij} \geq \frac{d_i+d_j}{2},
+\end{equation}
+with $D_{ij}$ the Euclidean distance between their centres and $d_i$ the lower Pflanzabstand value. This is a modeling assumption, not a biological law, and the stricter $\max(d_i,d_j)$ is tested as an alternative. The soft rules are combined in the energy
+\begin{equation}
+  E(X) = \sum_k w_k E_k(X),
+\end{equation}
+where $X$ contains the plant positions, $w_k$ is the weight of rule $k$, and each penalty $E_k\in[0,1]$ has zero as best value. Only rules with a horticultural rationale and sufficient trait data are included, as listed in Table~\ref{tab:rules}.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{|p{2.4cm}|p{5.0cm}|p{6.6cm}|}
+\hline
+\textbf{Rule} & \textbf{Design rationale and traits} & \textbf{Measure} \\
+\hline
+Grouping & Sociability level says whether a taxon stands single or in groups; trait: sociability class & Same-taxon plants within $1.5\,d_i$ form clusters; penalty is the mean relative deviation of cluster sizes from the interval of the sociability class \\
+\hline
+Height structure & Taller plants should emerge from a lower matrix, not form a uniform plateau; trait: flower height & Within a radius of 1\,m, a low coefficient of variation of heights is penalized; a directional variant is added if a viewing side is specified \\
+\hline
+Local flowering coverage & Every part of the bed should offer flowers through the season; trait: bloom months & The area is divided into blocks holding about ten plants on average; penalty is the mean share of season months without a blooming plant in a block \\
+\hline
+Structural plants & Framework plants should be spread, not concentrated; trait: functional type & Penalty $\max(0,1-R)$, where $R$ is the mean nearest-neighbor distance of the structural plants divided by the value expected for a random pattern \\
+\hline
+\end{tabular}
+\caption{Initial soft rules with rationale, traits and measure.}
+\label{tab:rules}
+\end{table}
+
+Flowering across the whole season is fixed by the taxa and is only reported, while the spatial rule checks that flowers are available everywhere. Colour distribution is optional and is added only if literature and data support a reproducible definition. Rules can conflict, for example compact groups against an even spread, so every term is reported separately. The weights are modeling parameters: the baseline uses equal weights, and the sensitivity experiments show how plans and the algorithm comparison change with them.
+
+\paragraph{Optimization algorithm.}
+Greedy insertion processes the plants in order of constraint: fewest feasible cells, largest spacing, most restrictive grouping, with the functional category only as a secondary criterion. Ties are broken at random, so the starting plan depends on the seed. Each plant goes to the admissible cell with the lowest resulting energy, and a run is marked infeasible if no admissible cell remains. Simulated Annealing then starts from this plan and proposes to shift a plant to a nearby admissible cell, to swap two plants of different taxa, or to move a group of plants together. A swap must satisfy the spacing at both new positions, and every proposal that violates a hard constraint is rejected. A feasible proposal with energy change $\Delta E$ is accepted with probability
+\begin{equation}
+  P(\mathrm{accept}) = \min\left(1,\exp\left(-\frac{\Delta E}{T}\right)\right),
+\end{equation}
+and the temperature $T$ decreases geometrically.\cite{kirkpatrick} The values of the upstream configuration ($T_0=10$, cooling rate $0.9995$, 20\,000 iterations) are starting points for tuning on pilot runs. Since a move changes only a local neighborhood, $\Delta E$ is computed incrementally with a spatial lookup, and the best plan found is always retained.
+
+\paragraph{Experiments and evaluation (RQ3).}
+The implementation uses Python with NumPy and SciPy, is configuration-driven and records all random seeds. Each configuration runs with 20 seeds on every area, and on every supplied plant list. Table~\ref{tab:experiments} lists the experiments. As a budget check, greedy insertion with random restarts and the same number of energy evaluations as one annealing run is also compared with Simulated Annealing.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{|c|p{6.8cm}|p{5.6cm}|}
+\hline
+\textbf{ID} & \textbf{Comparison} & \textbf{Purpose} \\
+\hline
+E1 & Greedy with random order vs.\ most-constrained-first order & H3: insertion order \\
+\hline
+E2 & Greedy vs.\ greedy + Simulated Annealing, paired by seed & H1 and H2: gain of annealing \\
+\hline
+E3 & Pair rule, weights, grid resolution, spacing fallbacks & Robustness to modeling choices \\
+\hline
+\end{tabular}
+\caption{Planned experiments.}
+\label{tab:experiments}
+\end{table}
+
+The main metric is the total energy together with its single terms. Further metrics are hard-constraint violations (which must be zero), the share of infeasible runs, the number of plants placed, deviation from the target proportions, monthly flowering coverage and runtime. For each run the relative improvement $I=(E_{\mathrm{greedy}}-E_{\mathrm{SA}})/E_{\mathrm{greedy}}$ over its own greedy start is summarized by median and interquartile range and tested per area with a one-sided paired Wilcoxon signed-rank test, with a Holm correction across areas. Insertion orders are compared on matched seeds. Because only three geometries are tested, conclusions are limited to these scenarios. No expert-made reference plan is available, so the plans are also rendered as maps, colored by bloom month and scaled by height, and reviewed with the supervisor. The main limitation is that the results depend on the chosen rules, traits and weights, which is why the sensitivity experiments are part of the evaluation. A second limitation is that rules based on few plants, such as the 8 structural plants of list C, are noisy and affected by the area edges, and a third is that the plant count is fixed before annealing.
+
+\section*{Report Outline}
+
+The final report will cover: (1) introduction, (2) related work, (3) plant data and problem formulation, (4) design rules, (5) algorithms, (6) experimental setup, (7) results and discussion, (8) limitations and future work, (9) conclusion.
+
+\section*{Time Schedule}
+
+\vspace{0.7em}
+
+\begin{tabular}{|c|p{0.75\textwidth}|}
+\hline
+\textbf{Time period} & \textbf{Tasks} \\
+\hline
+Nov 15 & Finishing and uploading this proposal \\
+\hline
+Nov 16 -- Nov 30 & Data preparation and fallbacks, packing check for list C, literature survey (reading and summarizing every cited source), first rule catalogue, discussion of open decisions with the supervisor \\
+\hline
+Dec 1 -- Dec 14 & Grid and masks for the three areas, capacity search for the plant count, energy terms, greedy prototype with visualizations \\
+\hline
+Dec 15 -- Jan 10 & Simulated Annealing with shift, swap and group moves, incremental energy, parameter tuning, revision of the rule model if necessary \\
+\hline
+Jan 11 -- Jan 25 & Experiments E1--E3 and statistical analysis \\
+\hline
+Jan 26 -- Feb 10 & Preparation of results, visual review with the supervisor, report writing \\
+\hline
+Feb 11 -- Feb 15 & Finishing and uploading the final project report \\
+\hline
+\end{tabular}
+
+\vspace{5mm}
+
+{\small
+\begingroup
+\let\chapter\section
+\bibliographystyle{ieeetr}
+\bibliography{literature}
+\endgroup
+}
+
+\end{document}
+```
+
+**Bibliography file, `literature.bib` (final)**
+
+```bibtex
+% Cited in the proposal. Keep an entry only if you have read the source.
+
+@article{kirkpatrick,
+  author  = {Kirkpatrick, S. and Gelatt, C. D. and Vecchi, M. P.},
+  title   = {Optimization by Simulated Annealing},
+  journal = {Science},
+  volume  = {220},
+  number  = {4598},
+  pages   = {671--680},
+  year    = {1983}
+}
+
+@article{merrell2011,
+  author  = {Merrell, P. and Schkufza, E. and Li, Z. and Agrawala, M. and Koltun, V.},
+  title   = {Interactive Furniture Layout Using Interior Design Guidelines},
+  journal = {ACM Transactions on Graphics},
+  volume  = {30},
+  number  = {4},
+  pages   = {87:1--87:10},
+  year    = {2011}
+}
+
+@article{yu2011,
+  author  = {Yu, L.-F. and Yeung, S.-K. and Tang, C.-K. and Terzopoulos, D. and Chan, T. F. and Osher, S. J.},
+  title   = {Make It Home: Automatic Optimization of Furniture Arrangement},
+  journal = {ACM Transactions on Graphics},
+  volume  = {30},
+  number  = {4},
+  pages   = {86:1--86:12},
+  year    = {2011}
+}
+
+% ---------------------------------------------------------------
+% NOT cited at the moment. Add \cite{...} back only after reading.
+% ---------------------------------------------------------------
+
+@article{garbuzov,
+  author  = {Garbuzov, M. and Ratnieks, F. L. W.},
+  title   = {Quantifying Variation among Garden Plants in Attractiveness to Bees and Other Flower-Visiting Insects},
+  journal = {Functional Ecology},
+  volume  = {28},
+  number  = {2},
+  pages   = {364--374},
+  year    = {2014}
+}
+
+@article{merrell2010,
+  author  = {Merrell, P. and Schkufza, E. and Koltun, V.},
+  title   = {Computer-Generated Residential Building Layouts},
+  journal = {ACM Transactions on Graphics},
+  volume  = {29},
+  number  = {6},
+  pages   = {181:1--181:12},
+  year    = {2010}
+}
+
+@article{clark,
+  author  = {Clark, P. J. and Evans, F. C.},
+  title   = {Distance to Nearest Neighbor as a Measure of Spatial Relationships in Populations},
+  journal = {Ecology},
+  volume  = {35},
+  number  = {4},
+  pages   = {445--453},
+  year    = {1954}
+}
+```
+
+## 5. OPEN THREADS / NEXT STEPS
+
+- **Small proposal fixes, offered but not yet applied:**
+  - Motivation paragraph 2: "part of the trait data used here" should read "appear in the data used here", because functional types come from the report.
+  - Check the PDF for a missing space in "82 m2 for"; in the source it has a space, so it may be an export artifact.
+  - Add one sentence on deliverables (code, coordinate plans and maps for all area and list combinations, final report).
+  - Optionally define the metric "deviation from target proportions", e.g. the maximum absolute difference between realized and target share of any taxon.
+- **Emails to Marco:** drafted (short question email, then the reply that the proposal was changed and sources will be read). It is not stated whether they were sent.
+- **Questions still open with Marco:**
+  - Spacing as strict minimum or denser mixed planting.
+  - Fallback for the two taxa without spacing.
+  - Whether all three plant lists are tested on all areas.
+  - Confirmation that heights are cm.
+  - The missing bulbs and the "unbestimmbar" taxon.
+  - The area convention (same 50 m² outer box).
+- **For the user to do:** read Kirkpatrick 1983, the method sections of Merrell et al. 2011 and Yu et al. 2011, and prepare two sentences on each cited source. Create the repository (`src/`, `data/`, `config/`, `tests/`, `results/`, `notes/`, `DECISIONS.md`, `README.md`).
+- **Immediate next action for the new Claude:** write the Step 1 data-preparation script on the user's confirmation. It should pivot the long-format CSV to one row per taxon, convert the heights from the mislabelled "size mm" to cm, keep every sociability entry (do not fill gaps in disjoint intervals), add taxon counts and functional types from the report, add the spacing fallback with a flag column, and verify five taxa by hand against the CSV.
+- **Then:** Steps 2–7 of the plan (grid and masks with distance-transform padding; counts and packing; hard constraints and four rules with unit tests; greedy and capacity search; SA with a full-vs-incremental energy test; experiments with a complete metric logger and the statistics).
+
+## 6. IMPORTANT QUOTES
+
+- User: "I am working on this research project as my expert advisor how should I move ahead"
+- User: "also want OCAR method obstacle challenge Action Resolution and if refrozen here mention it shoude bel like on end of sentence means I am Tapas.[1] this way"
+- User: "revive bullts if bold text is done"
+- User: "make it interdsting"
+- User: "simple mail"
+- User: "no want an email responding that that I have made changes as per your word and I will make sure I ill read and and add in th paper for research"
+- User: "I want to implement and if I have time I will make my ideas work with it so how do u feel"
+- User (on the review): "first you say what I found is correct or not"
+- Marco: "The taxa are fixed. You may alter the plant counts if the area is too densely or too sparsely planted. In this case, the ratios of the plants shall be preserved."
+- Marco: "the target should be 500, and the area should be filled with as many plants as possible, while keeping their relative frequencies as constant as possible."
+- Marco: "You should only cite sources that you have read and whose content you are familiar with."
+- Marco: "Using AI is okay for researching related work and correcting the language. However, the output should ALWAYS be reviewed."
+- Marco: "the proposal is very detailed and provides a good foundation for the main work."
+
+## 7. DO NOT
+
+- Do not cite any source the user has not read, and do not add references from memory without asking the user to read and verify them. Do not reintroduce the removed sources (the four books, Metropolis, Bridson, Deussen) without his confirmation.
+- Do not hardcode 10 plants/m² or reduce counts below the target logic. The agreed logic is the target of 500, filled as far as possible with constant proportions.
+- Do not reopen settled choices without a reason: the title, the 20 cm grid with masks, the three test areas, greedy vs. greedy + SA as the main comparison, the disc/pair-rule model (mean baseline, max alternative), and the four soft rules.
+- Do not claim novelty without a literature search, and do not claim the plans are horticulturally optimal (only improved under the defined rules).
+- Do not use bullet points with bold lead-ins in the proposal text. Place citations after the sentence's period, e.g. "...sentence.[1]".
+- Do not treat the other AI's ticked "6/6 completed" checklist as real progress.
+- Do not add scope creep (dashboard, natural-language placement explanations, Pareto optimization) before the core pipeline and experiments work. Per-term energy reporting and a layout-stability analysis are the only cheap extras recommended.
+- Avoid long, jargon-heavy explanations: the user prefers simple language and short emails.
+
+---
+END_HANDOFF_DOCUMENT
+---
+
+TOKEN_ESTIMATE: ~11,500 tokens
